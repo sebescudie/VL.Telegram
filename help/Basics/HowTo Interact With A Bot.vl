@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="MYp8dhNDo9JLj3dUELTvlZ" LanguageVersion="2020.1.0" Version="0.128">
+  <NugetDependency Id="JSewzf8A29JOetEHMTmON7" Location="VL.CoreLib" Version="2020.1.0" />
+  <Patch Id="Ee7C9S5IM84N7J8TxxB9bd">
+    <Canvas Id="MgGJdhuJNw1L372hzZySNX" DefaultCategory="Main" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="OI31a45lcrJLULlXaw5Ypt">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="RmC1UPPCITQLxAKb5xMBtz">
+        <Canvas Id="F3eeLDFvRX7LtwYeL61JNZ" CanvasType="Group">
+          <Node Bounds="122,112,177,19" Id="HxgxkSIq8gvP3aL6ojIoHC">
+            <p:NodeReference LastCategoryFullName="IO.Telegram.Bot" LastSymbolSource="VL.Telegram.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="IO" />
+              <CategoryReference Kind="Category" Name="Telegram" />
+              <CategoryReference Kind="Category" Name="Bot" />
+              <Choice Kind="ProcessAppFlag" Name="BotClient" />
+            </p:NodeReference>
+            <Pin Id="Mkun5b1nTOdPnGy5z7C4ve" Name="Token" Kind="InputPin" />
+            <Pin Id="VAvtxV3NoSiQD4jZJESfi8" Name="Connect" Kind="InputPin" DefaultValue="False">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="UvkXIKUQpG2OIPR1nQX8dp" Name="Stop Receiving" Kind="InputPin" />
+            <Pin Id="Vyrrm1FtrFZQRgde8hkuoh" Name="Output" Kind="OutputPin" />
+            <Pin Id="QyBUyh0Iv2UNTxEfLBIQqH" Name="Is Receiving" Kind="OutputPin" />
+            <Pin Id="Sgg3CVM5E5KLw9qRyIMptB" Name="Username" Kind="OutputPin" />
+          </Node>
+          <Pad Id="NxOtz0IkOYgOedtPZkUdl7" Comment="Token" Bounds="124,86,35,15" ShowValueBox="true" isIOBox="true" Value="816114921:AAFLxjVYFCNLjbweujzqzoQbSb-KbuNmV2I">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="R4I4pnQs3euMeqFaFy2kRi" Comment="Username" Bounds="296,155,58,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="V175Ruk5gNlLBzL5bEuGPz" Comment="Stop Receiving" Bounds="296,86,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="U7YqyLEL4efPMPvpjubkgk" Comment="" Bounds="210,155,35,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="122,190,68,19" Id="OUcdJonsRNSOH9Ezl5Zge2">
+            <p:NodeReference>
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="IO" />
+              <CategoryReference Kind="Category" Name="Telegram" />
+              <CategoryReference Kind="Category" Name="Utilities" />
+              <Choice Kind="ProcessAppFlag" Name="OnMessage" />
+            </p:NodeReference>
+            <Pin Id="Dj7KWXlOmdpMmudblxbx42" Name="Input" Kind="InputPin" />
+            <Pin Id="LnGh503EVqwOjGXhWW23x8" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="122,234,65,19" Id="DpdtOPiTCCZNqUqZ1y7N15">
+            <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
+            </p:NodeReference>
+            <Pin Id="IbyboCHF3kmLyMJ5Kf0zKn" Name="Async Notifications" Kind="InputPin" />
+            <Pin Id="MJ2qTjJzRPJNUnCGZxvE0i" Name="Reset" Kind="InputPin" />
+            <Pin Id="TmpyzBW3gaxL3QcnhGbI3U" Name="Value" Kind="OutputPin" />
+            <Pin Id="NJQQm08FIGXMAHSkvfoEGW" Name="On Data" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="57,301,47,26" Id="AyYQtXqH4bWMkzv2SGIrQp">
+            <p:NodeReference LastCategoryFullName="IO.Telegram.Message" LastSymbolSource="VL.Telegram.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="RecordType" Name="Message" />
+              <Choice Kind="OperationCallFlag" Name="Text" />
+            </p:NodeReference>
+            <Pin Id="V3CDHGnmCrQLyqk2k0QzYm" Name="Input" Kind="StateInputPin" />
+            <Pin Id="UveXkJJNWOILmUDUhDvE5r" Name="Text" Kind="OutputPin" />
+          </Node>
+          <Pad Id="LUbtNhGvNrkMpmnw8FVLRD" Comment="" Bounds="59,356,80,32" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">15</p:fontsize>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="267,294,47,19" Id="JXYwvQQxbTGOsQLr1NpmMD">
+            <p:NodeReference LastCategoryFullName="IO.Telegram.Message" LastSymbolSource="VL.Telegram.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="ChatID" />
+            </p:NodeReference>
+            <Pin Id="DK77E23A7ZXP0FEmEzXFfu" Name="Input" Kind="StateInputPin" />
+            <Pin Id="BMjPn8iPiaJOo2cPApXn8d" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="246,409,98,19" Id="SH94nhzJx5xMOWSvjNtEmS">
+            <p:NodeReference LastCategoryFullName="IO.Telegram.Utilities.Message" LastSymbolSource="VL.Telegram.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="IO" />
+              <CategoryReference Kind="Category" Name="Telegram" />
+              <CategoryReference Kind="Category" Name="Utilities" />
+              <CategoryReference Kind="Category" Name="Message" />
+              <Choice Kind="ProcessAppFlag" Name="SendTextMessage" />
+            </p:NodeReference>
+            <Pin Id="KVrMytVpfs7O5EKrUWStFT" Name="Input" Kind="InputPin" />
+            <Pin Id="CRdvnGEzffcOXCFOUgbolT" Name="Chat Id" Kind="InputPin" />
+            <Pin Id="TYjcIDFb6qbLU7P6cw9H34" Name="Text" Kind="InputPin" />
+            <Pin Id="CTvnYG9dhRCPCcLsa7tSj3" Name="Reply Markup" Kind="InputPin" />
+            <Pin Id="CyYmeZC5OFiMmGlVH7llLl" Name="Send" Kind="InputPin" />
+          </Node>
+          <Pad Id="GIndwne09KEP83mkWbewJ4" Comment="Text" Bounds="295,352,94,15" ShowValueBox="true" isIOBox="true" Value="Bonsoiiiir">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="G6pJ8ZRXoclPvrazLCvO5H" Comment="Send" Bounds="341,390,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="419,410,85,19" Id="Tr0Y8QyK8OiPzURCaX1egY">
+            <p:NodeReference LastCategoryFullName="IO.Telegram.Utilities.Message" LastSymbolSource="VL.Telegram.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="SendPhoto" />
+            </p:NodeReference>
+            <Pin Id="HW0dsVoF7lvLhYPlQ5935j" Name="Bot" Kind="InputPin" />
+            <Pin Id="BooGky8sAE0LWzILV1uaTV" Name="Chat Id" Kind="InputPin" />
+            <Pin Id="AViSNZNgZxbNMFSOKSdauC" Name="Path" Kind="InputPin" />
+            <Pin Id="FW0YoaLFKP5MBp4dqd9ZAJ" Name="Caption" Kind="InputPin" />
+            <Pin Id="TAP441XsxIePMmpB1nNmYS" Name="Execute" Kind="InputPin" />
+          </Node>
+          <Pad Id="Uh00ucePhq1MDDBJaVGYJC" Comment="Path" Bounds="461,353,140,15" ShowValueBox="true" isIOBox="true" Value="..\..\..\..\..\..\..\Pictures\dev\ml\02.png">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Path" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="NlhOSL0KJdNNj7xi7Qp42D" Comment="Trigger" Bounds="501,388,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="256,784,98,19" Id="HgVYwJJxHJXLEoNW37ywOS">
+            <p:NodeReference LastCategoryFullName="IO.Telegram.Utilities.Message" LastSymbolSource="VL.Telegram.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="SendTextMessage" />
+            </p:NodeReference>
+            <Pin Id="R0eLF835RZLLW8Oy08kfas" Name="Input" Kind="InputPin" />
+            <Pin Id="Je6tqvqEVR6MCo47DRu5Cx" Name="Chat Id" Kind="InputPin" />
+            <Pin Id="JjLxKEo8M1nOpPJxXgBRZj" Name="Text" Kind="InputPin" DefaultValue="Choisis un truc">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="JRNrDpbIc26N2joFgGBT0Z" Name="Reply Markup" Kind="InputPin" />
+            <Pin Id="F21qjyOP7rQLmHMPES9F2J" Name="Send" Kind="InputPin" />
+          </Node>
+          <Node Bounds="325,737,84,19" Id="BneRtOaeehfMF3aegHOJ1i">
+            <p:NodeReference LastCategoryFullName="IO.Telegram.Utilities.Keyboards" LastSymbolSource="VL.Telegram.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="InlineKeyboard" />
+            </p:NodeReference>
+            <Pin Id="J4KVD2Xd8NxMlpXcWKtguA" Name="Label" Kind="InputPin" />
+            <Pin Id="NJfwY1xt5BXLYPzyMyYo4s" Name="Callback Data" Kind="InputPin" />
+            <Pin Id="D8lV7AeuFvgO0UZUJA8Sim" Name="Switch Inline Query" Kind="InputPin" />
+            <Pin Id="NjYu1X8Wpl7O3ofVmXg57L" Name="URL" Kind="InputPin" />
+            <Pin Id="GPHEoPv6xyqOyeL9ItsMwJ" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="BVArulzbHKJM35UyiK2nvF" Comment="Label" Bounds="329,487,98,65" ShowValueBox="true" isIOBox="true">
+            <p:TypeAnnotation LastCategoryFullName="Collections" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="TypeFlag" Name="Spread" />
+              <p:TypeArguments>
+                <TypeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </TypeReference>
+              </p:TypeArguments>
+            </p:TypeAnnotation>
+            <p:Value>
+              <Item>Bouton 1</Item>
+              <Item>Bouton 2</Item>
+              <Item>Bouton 3</Item>
+            </p:Value>
+          </Pad>
+          <Pad Id="SvUMkgWmbwLOlFKdqyJS9z" Comment="Callback Data" Bounds="353,574,35,65" ShowValueBox="true" isIOBox="true">
+            <p:TypeAnnotation LastCategoryFullName="Collections" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="TypeFlag" Name="Spread" />
+              <p:TypeArguments>
+                <TypeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </TypeReference>
+              </p:TypeArguments>
+            </p:TypeAnnotation>
+            <p:Value>
+              <Item>1</Item>
+              <Item>2</Item>
+              <Item>3</Item>
+            </p:Value>
+          </Pad>
+          <Pad Id="T3qO9qJIILsPR5mzEoK8mE" Comment="Send" Bounds="471,763,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="HPt7nEPiwUWMvKVU6WspFF" Comment="Switch Inline Query" Bounds="475,574,35,65" ShowValueBox="true" isIOBox="true">
+            <p:TypeAnnotation LastCategoryFullName="Collections" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="TypeFlag" Name="Spread" />
+              <p:TypeArguments>
+                <TypeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </TypeReference>
+              </p:TypeArguments>
+            </p:TypeAnnotation>
+            <p:Value>
+              <Item></Item>
+              <Item></Item>
+              <Item></Item>
+            </p:Value>
+          </Pad>
+          <Pad Id="R1jrMyN38pYM5rJEHKcChm" Comment="URL" Bounds="627,574,35,65" ShowValueBox="true" isIOBox="true">
+            <p:TypeAnnotation LastCategoryFullName="Collections" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="TypeFlag" Name="Spread" />
+              <p:TypeArguments>
+                <TypeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </TypeReference>
+              </p:TypeArguments>
+            </p:TypeAnnotation>
+            <p:Value>
+              <Item></Item>
+              <Item></Item>
+              <Item></Item>
+            </p:Value>
+          </Pad>
+          <Node Bounds="795,287,95,19" Id="V1LVDgV108ELoIdz3DicGo">
+            <p:NodeReference LastCategoryFullName="IO.Telegram.Utilities.CallbackQuery" LastSymbolSource="VL.Telegram.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="OnCallbackQuery" />
+            </p:NodeReference>
+            <Pin Id="TErhbn3hy4iLtS2XtBFgyM" Name="Input" Kind="InputPin" />
+            <Pin Id="G8ryyZvGSQGLwfaeVROCqK" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="795,342,92,139" Id="PuDYLfFSPKCMrGGBDSU8a7">
+            <p:NodeReference LastCategoryFullName="IO.Telegram.Utilities.CallbackQuery" LastSymbolSource="VL.Telegram.vl">
+              <Choice Kind="ProcessAppFlag" Name="ReactOnCallbackQuery" />
+              <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
+            </p:NodeReference>
+            <Patch Id="A9mWJyzDlfdO2U92qwrpH1" Name="Action" ManuallySortedPins="true">
+              <ControlPoint Id="QWW4OBdD86zPVooJkYkptt" Bounds="814,474" />
+              <Pin Id="HJZbwp6aZLNO9YVaARpEyD" Name="Input" Kind="InputPin" />
+              <Pin Id="LZUc3YRlqpFNGbgRZIEyYD" Name="Result" Kind="OutputPin">
+                <p:TypeAnnotation>
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
+              <ControlPoint Id="K0oZhBYjHRMMF69Ln3lcFD" Bounds="809,350" />
+              <Node Bounds="807,373,68,26" Id="KQBe254AIyyQYh2nLnNHC5">
+                <p:NodeReference LastCategoryFullName="IO.Telegram.CallbackQuery" LastSymbolSource="VL.Telegram.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="Category" Name="CallbackQuery" />
+                  <Choice Kind="OperationCallFlag" Name="From" />
+                </p:NodeReference>
+                <Pin Id="MEVBIFZmVfsNHhn4K4Kl3t" Name="Input" Kind="StateInputPin" />
+                <Pin Id="EQ3KxRiJwSzLV9rS8DHifK" Name="From" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="807,422,58,26" Id="APpsdjaXUhvQH0fwMscOx6">
+                <p:NodeReference LastCategoryFullName="System.Console" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="WriteLine" />
+                  <CategoryReference Kind="Category" Name="Console" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="TEcs9rhH4CuQEPCLMx5tsd" Name="Value" Kind="InputPin" />
+                <Pin Id="VLEMAi4tj1QLyIhp8ihTPG" Name="Apply" Kind="InputPin" DefaultValue="True">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="Boolean" />
+                  </p:TypeAnnotation>
+                </Pin>
+              </Node>
+            </Patch>
+            <Pin Id="RHfN3yQGWIyNbG6nmhHTUQ" Name="Input" Kind="InputPin" />
+            <Pin Id="VOffuUv2xHMN1HDcQSORMj" Name="Bot" Kind="InputPin" />
+            <Pin Id="Hnh9c9NGLniOkZr7UU7XVO" Name="Callback Data Filter" Kind="InputPin" />
+            <Pin Id="Nv0JgRQUeAXMKnXBHPbBB6" Name="Result" Kind="OutputPin" />
+            <Pin Id="Gza0V8bXUuWPHqWukU1P1b" Name="On Data" Kind="OutputPin" />
+          </Node>
+          <Pad Id="PktfFUhu7rWLZ4b31C8PRh" Comment="Data Filter" Bounds="884,320,35,15" ShowValueBox="true" isIOBox="true" Value="2">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="VbHdNiUPovCPVlXE0cMANg" Bounds="803,268,172,19" ShowValueBox="true" isIOBox="true" Value="React to callback query">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="JscjV6iXBN1OBsMP1kW58r" Bounds="248,827,134,19" ShowValueBox="true" isIOBox="true" Value="Send inline keyboard">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="PjTf2TiIkZmNwyC5zA89v7" Bounds="107,591,134,19" ShowValueBox="true" isIOBox="true" Value="Send text  message">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="RrbCHoxlLWmMufQD9cFz3w" Bounds="517,415,80,19" ShowValueBox="true" isIOBox="true" Value="send photo">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="DrtOmWkxAkYMTCbMOXAkZb" Comment="File Path" Bounds="744,679,77,3" ShowValueBox="true" isIOBox="true" Value="C:\img.tmp">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Path" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="860,577" Id="OjkkPXbCo2TOv8E9AyeiEH">
+            <p:NodeReference LastCategoryFullName="IO.Telegram.Utilities.Message" LastSymbolSource="VL.Telegram.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="SendImage" />
+            </p:NodeReference>
+            <Pin Id="Def4VpFbcJVMKYZeJuLSbY" Name="Trigger" Kind="InputPin" />
+            <Pin Id="MaWmIqWDvWtOI3RnHJNGoq" Name="Bot" Kind="InputPin" />
+            <Pin Id="D2Ft4PqPtLcM6o48OLnYqF" Name="Chat Id" Kind="InputPin" />
+            <Pin Id="K6nt32GVAAPMZo4SrARJCg" Name="Image" Kind="InputPin" />
+          </Node>
+          <Pad Id="OtJuoYtMrNNLez6c11Fr8G" SlotId="ECyumnsUsotP6BfGi4K2bz" Bounds="810,555" />
+          <Node Bounds="1004,538" Id="OlC1vh66lgBLxNqMRVTYAt">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.IO" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ImageReader" />
+            </p:NodeReference>
+            <Pin Id="IkFuRYHSuB1P6soYtolk8B" Name="Filename" Kind="InputPin" DefaultValue="..\..\..\..\..\..\..\Pictures\dev\ml\02.png">
+              <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Path" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="J9C8lbFkdXwNDzXZT3u4Ef" Name="Load" Kind="InputPin" />
+            <Pin Id="IDmqntta1u2MkCViOoy11g" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Nfn6s26Bm5PP41c49l3JFm" Comment="Trigger" Bounds="942,469,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="PCBTbm3WoFwNSxPzvTMAq9" Comment="Connect" Bounds="245,53,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+              <p:showbutton p:Type="Boolean">true</p:showbutton>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="RCnWm74kll3LZkfYmfO3IQ" Name="Create" />
+        <Patch Id="Qu8fz2DgGjKNgj1Z56uM80" Name="Update" />
+        <ProcessDefinition Id="FjofMcciHnJNBBamSXwef8">
+          <Fragment Id="AzoEgJr03vbOY2r40YJrMO" Patch="RCnWm74kll3LZkfYmfO3IQ" Enabled="true" />
+          <Fragment Id="L074abzfVbZO3aLOneaeRX" Patch="Qu8fz2DgGjKNgj1Z56uM80" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="NwMaX1z869wLuonEFFbe7p" Ids="NxOtz0IkOYgOedtPZkUdl7,Mkun5b1nTOdPnGy5z7C4ve" />
+        <Link Id="OQBR2FlkfdwNHk1oQKO3K2" Ids="Sgg3CVM5E5KLw9qRyIMptB,R4I4pnQs3euMeqFaFy2kRi" />
+        <Link Id="Jcfl27Z90ZdPOKfQduXlW2" Ids="V175Ruk5gNlLBzL5bEuGPz,UvkXIKUQpG2OIPR1nQX8dp" />
+        <Link Id="HjreYkAXmgrO4rXkLgko3N" Ids="QyBUyh0Iv2UNTxEfLBIQqH,U7YqyLEL4efPMPvpjubkgk" />
+        <Link Id="DbZ0p6bJPPFP2VK9WIS7Kx" Ids="Vyrrm1FtrFZQRgde8hkuoh,Dj7KWXlOmdpMmudblxbx42" />
+        <Link Id="FbioXnTU9UTMk2wbsuyPXn" Ids="LnGh503EVqwOjGXhWW23x8,IbyboCHF3kmLyMJ5Kf0zKn" />
+        <Link Id="GLsUPFwm8m2P5gS1CtpNPT" Ids="TmpyzBW3gaxL3QcnhGbI3U,V3CDHGnmCrQLyqk2k0QzYm" />
+        <Link Id="Ct8ygkmlTqSOypzQP75h7u" Ids="UveXkJJNWOILmUDUhDvE5r,LUbtNhGvNrkMpmnw8FVLRD" />
+        <Link Id="BX8Kp9MaUJ7Ny5On7L4md2" Ids="TmpyzBW3gaxL3QcnhGbI3U,DK77E23A7ZXP0FEmEzXFfu" />
+        <Link Id="IcHfyuHTcLdLPMCAl0pT5a" Ids="Vyrrm1FtrFZQRgde8hkuoh,KVrMytVpfs7O5EKrUWStFT" />
+        <Link Id="RT2nNxBxKpHPbQifdRC2P6" Ids="BMjPn8iPiaJOo2cPApXn8d,CRdvnGEzffcOXCFOUgbolT" />
+        <Link Id="KeZ7Ytbcex6Mgr7yobU3Kp" Ids="GIndwne09KEP83mkWbewJ4,TYjcIDFb6qbLU7P6cw9H34" />
+        <Link Id="SRbGfEfdxqLLeNcXsn4BqF" Ids="G6pJ8ZRXoclPvrazLCvO5H,CyYmeZC5OFiMmGlVH7llLl" />
+        <Link Id="AtcQOxkjCLGQFAON2SUmRl" Ids="Vyrrm1FtrFZQRgde8hkuoh,HW0dsVoF7lvLhYPlQ5935j" />
+        <Link Id="JJYM89vn2BbMiuWXR8yfVK" Ids="BMjPn8iPiaJOo2cPApXn8d,BooGky8sAE0LWzILV1uaTV" />
+        <Link Id="TDp0buGmH1tL22b4cBeufM" Ids="Uh00ucePhq1MDDBJaVGYJC,AViSNZNgZxbNMFSOKSdauC" />
+        <Link Id="TbQGzvmpuryLxJV9CwiX0U" Ids="NlhOSL0KJdNNj7xi7Qp42D,TAP441XsxIePMmpB1nNmYS" />
+        <Link Id="N3WA8xELCrSQCnotFlv40X" Ids="Vyrrm1FtrFZQRgde8hkuoh,R0eLF835RZLLW8Oy08kfas" />
+        <Link Id="GphEMFQumXtPDYc5dKX5XK" Ids="GPHEoPv6xyqOyeL9ItsMwJ,JRNrDpbIc26N2joFgGBT0Z" />
+        <Link Id="EAduAtel43DO4fxxwg6hu1" Ids="BVArulzbHKJM35UyiK2nvF,J4KVD2Xd8NxMlpXcWKtguA" />
+        <Link Id="VK8L0a5c5alMCEeWQObRC9" Ids="SvUMkgWmbwLOlFKdqyJS9z,NJfwY1xt5BXLYPzyMyYo4s" />
+        <Link Id="USe9PjFfqu9PNKNDGCNVIN" Ids="BMjPn8iPiaJOo2cPApXn8d,Je6tqvqEVR6MCo47DRu5Cx" />
+        <Link Id="L89s899s6zyNpgoqvZzd49" Ids="T3qO9qJIILsPR5mzEoK8mE,F21qjyOP7rQLmHMPES9F2J" />
+        <Link Id="MK2SftGgiA5PD2ekBXEtEE" Ids="HPt7nEPiwUWMvKVU6WspFF,D8lV7AeuFvgO0UZUJA8Sim" />
+        <Link Id="IpOj5rOZjygN5L89ncQhFC" Ids="R1jrMyN38pYM5rJEHKcChm,NjYu1X8Wpl7O3ofVmXg57L" />
+        <Link Id="Mq6tIUsYQAOPePIueOFwqE" Ids="Vyrrm1FtrFZQRgde8hkuoh,TErhbn3hy4iLtS2XtBFgyM" />
+        <Link Id="R78Q0CdJqJtP4hQQYF3L8Z" Ids="QWW4OBdD86zPVooJkYkptt,LZUc3YRlqpFNGbgRZIEyYD" IsHidden="true" />
+        <Link Id="G7KDnuBlq2lQKcB26BSfMP" Ids="G8ryyZvGSQGLwfaeVROCqK,RHfN3yQGWIyNbG6nmhHTUQ" />
+        <Link Id="Th1BNrATHFwLtP7cRo5vtI" Ids="PktfFUhu7rWLZ4b31C8PRh,Hnh9c9NGLniOkZr7UU7XVO" />
+        <Link Id="TGAb2AwsE8KM42aUqxBNLO" Ids="HJZbwp6aZLNO9YVaARpEyD,K0oZhBYjHRMMF69Ln3lcFD" IsHidden="true" />
+        <Link Id="TOsNsTmxFNbPOejEIFXRV3" Ids="K0oZhBYjHRMMF69Ln3lcFD,MEVBIFZmVfsNHhn4K4Kl3t" />
+        <Link Id="CDwU023Y43tLfYx8XFN9oM" Ids="EQ3KxRiJwSzLV9rS8DHifK,TEcs9rhH4CuQEPCLMx5tsd" />
+        <Link Id="QIbsbxGPr2CMBTpl4AZIsp" Ids="Vyrrm1FtrFZQRgde8hkuoh,VOffuUv2xHMN1HDcQSORMj" />
+        <Slot Id="ECyumnsUsotP6BfGi4K2bz" Name="Bot" />
+        <Link Id="QttVy5BEhtTLeMzubLSgtW" Ids="OtJuoYtMrNNLez6c11Fr8G,MaWmIqWDvWtOI3RnHJNGoq" />
+        <Link Id="CkV19yFIHTINivOAMIJsF8" Ids="IDmqntta1u2MkCViOoy11g,K6nt32GVAAPMZo4SrARJCg" />
+        <Link Id="I0OgAvFkJYLMlr36fRiVkU" Ids="BMjPn8iPiaJOo2cPApXn8d,D2Ft4PqPtLcM6o48OLnYqF" />
+        <Link Id="Nbh0Wq92TCZMmLZ26jZNl1" Ids="Nfn6s26Bm5PP41c49l3JFm,Def4VpFbcJVMKYZeJuLSbY" />
+        <Link Id="SyJ9P13a5VLPlefLUoAHRH" Ids="PCBTbm3WoFwNSxPzvTMAq9,VAvtxV3NoSiQD4jZJESfi8" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="V31RlOYtvB2P5KDaEP5dL2" Location="VL.Skia" Version="2020.1.0" />
+  <DocumentDependency Id="KDiRxknvI1SNWCPVfBDDsc" Location="../../VL.Telegram.vl" />
+  <PlatformDependency Id="HATvHA9kImJM6IHs34EwJR" Location="mscorlib" />
+</Document>
