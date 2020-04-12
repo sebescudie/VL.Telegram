@@ -23,20 +23,20 @@
               <CategoryReference Kind="Category" Name="Bot" />
               <Choice Kind="ProcessAppFlag" Name="BotClient" />
             </p:NodeReference>
-            <Pin Id="Mkun5b1nTOdPnGy5z7C4ve" Name="Token" Kind="InputPin" />
+            <Pin Id="GJtcYtWSYLJOFatppq46ON" Name="Token" Kind="InputPin" />
             <Pin Id="CiSC5TpLRk1N2EogHvug1g" Name="Start Receiving" Kind="InputPin" />
             <Pin Id="UvkXIKUQpG2OIPR1nQX8dp" Name="Stop Receiving" Kind="InputPin" />
-            <Pin Id="Vyrrm1FtrFZQRgde8hkuoh" Name="Output" Kind="OutputPin" />
-            <Pin Id="Sgg3CVM5E5KLw9qRyIMptB" Name="Username" Kind="OutputPin" />
-            <Pin Id="QyBUyh0Iv2UNTxEfLBIQqH" Name="Is Receiving" Kind="OutputPin" />
+            <Pin Id="LiJaIuQ8AchQIlfsDnozRI" Name="Bot" Kind="OutputPin" />
+            <Pin Id="VcBUl3tztADMelO3DBX2z6" Name="Username" Kind="OutputPin" />
+            <Pin Id="HbDNNVCsn45NZ9BCIFq6AJ" Name="Is Receiving" Kind="OutputPin" />
           </Node>
-          <Pad Id="NxOtz0IkOYgOedtPZkUdl7" Comment="Token" Bounds="109,176,246,15" ShowValueBox="true" isIOBox="true" Value="1234567:4TT8bAc8GHUspu3ERYn-KGcvsvGB9u_n4ddy&quot;">
+          <Pad Id="NxOtz0IkOYgOedtPZkUdl7" Comment="Token" Bounds="109,176,246,15" ShowValueBox="true" isIOBox="true" Value="">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="R4I4pnQs3euMeqFaFy2kRi" Comment="Username" Bounds="195,327,58,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="V175Ruk5gNlLBzL5bEuGPz" Comment="Stop Receiving" Bounds="281,246,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="R4I4pnQs3euMeqFaFy2kRi" Comment="Username" Bounds="195,320,58,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="V175Ruk5gNlLBzL5bEuGPz" Comment="Stop Receiving" Bounds="281,241,35,15" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -44,7 +44,6 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="U7YqyLEL4efPMPvpjubkgk" Comment="" Bounds="281,302,35,15" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="107,340,68,19" Id="OUcdJonsRNSOH9Ezl5Zge2">
             <p:NodeReference>
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -326,7 +325,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="MlKvskv10JAOBOuGSPlF0z" Comment="Start Receiving" Bounds="195,217,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="MlKvskv10JAOBOuGSPlF0z" Comment="Start Receiving" Bounds="195,213,35,15" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -545,6 +544,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Pad Id="FAM5U7ALTh8OvNQpyWnLu5" Comment="Is Receiving" Bounds="281,301,35,15" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="RCnWm74kll3LZkfYmfO3IQ" Name="Create" />
         <Patch Id="Qu8fz2DgGjKNgj1Z56uM80" Name="Update" />
@@ -552,10 +552,7 @@
           <Fragment Id="AzoEgJr03vbOY2r40YJrMO" Patch="RCnWm74kll3LZkfYmfO3IQ" Enabled="true" />
           <Fragment Id="L074abzfVbZO3aLOneaeRX" Patch="Qu8fz2DgGjKNgj1Z56uM80" Enabled="true" />
         </ProcessDefinition>
-        <Link Id="NwMaX1z869wLuonEFFbe7p" Ids="NxOtz0IkOYgOedtPZkUdl7,Mkun5b1nTOdPnGy5z7C4ve" />
-        <Link Id="OQBR2FlkfdwNHk1oQKO3K2" Ids="Sgg3CVM5E5KLw9qRyIMptB,R4I4pnQs3euMeqFaFy2kRi" />
         <Link Id="Jcfl27Z90ZdPOKfQduXlW2" Ids="V175Ruk5gNlLBzL5bEuGPz,UvkXIKUQpG2OIPR1nQX8dp" />
-        <Link Id="HjreYkAXmgrO4rXkLgko3N" Ids="QyBUyh0Iv2UNTxEfLBIQqH,U7YqyLEL4efPMPvpjubkgk" />
         <Link Id="FbioXnTU9UTMk2wbsuyPXn" Ids="LnGh503EVqwOjGXhWW23x8,IbyboCHF3kmLyMJ5Kf0zKn" />
         <Link Id="GLsUPFwm8m2P5gS1CtpNPT" Ids="TmpyzBW3gaxL3QcnhGbI3U,V3CDHGnmCrQLyqk2k0QzYm" />
         <Link Id="Ct8ygkmlTqSOypzQP75h7u" Ids="UveXkJJNWOILmUDUhDvE5r,LUbtNhGvNrkMpmnw8FVLRD" />
@@ -571,27 +568,30 @@
         <Link Id="VK8L0a5c5alMCEeWQObRC9" Ids="SvUMkgWmbwLOlFKdqyJS9z,NJfwY1xt5BXLYPzyMyYo4s" />
         <Link Id="L89s899s6zyNpgoqvZzd49" Ids="T3qO9qJIILsPR5mzEoK8mE,F21qjyOP7rQLmHMPES9F2J" />
         <Link Id="IpOj5rOZjygN5L89ncQhFC" Ids="R1jrMyN38pYM5rJEHKcChm,NjYu1X8Wpl7O3ofVmXg57L" />
-        <Link Id="Mq6tIUsYQAOPePIueOFwqE" Ids="Vyrrm1FtrFZQRgde8hkuoh,TErhbn3hy4iLtS2XtBFgyM" />
         <Link Id="R78Q0CdJqJtP4hQQYF3L8Z" Ids="QWW4OBdD86zPVooJkYkptt,LZUc3YRlqpFNGbgRZIEyYD" IsHidden="true" />
         <Link Id="G7KDnuBlq2lQKcB26BSfMP" Ids="G8ryyZvGSQGLwfaeVROCqK,RHfN3yQGWIyNbG6nmhHTUQ" />
         <Link Id="Th1BNrATHFwLtP7cRo5vtI" Ids="PktfFUhu7rWLZ4b31C8PRh,Hnh9c9NGLniOkZr7UU7XVO" />
         <Link Id="TGAb2AwsE8KM42aUqxBNLO" Ids="HJZbwp6aZLNO9YVaARpEyD,K0oZhBYjHRMMF69Ln3lcFD" IsHidden="true" />
         <Link Id="TOsNsTmxFNbPOejEIFXRV3" Ids="K0oZhBYjHRMMF69Ln3lcFD,MEVBIFZmVfsNHhn4K4Kl3t" />
         <Link Id="CDwU023Y43tLfYx8XFN9oM" Ids="EQ3KxRiJwSzLV9rS8DHifK,TEcs9rhH4CuQEPCLMx5tsd" />
-        <Link Id="QIbsbxGPr2CMBTpl4AZIsp" Ids="Vyrrm1FtrFZQRgde8hkuoh,VOffuUv2xHMN1HDcQSORMj" />
         <Slot Id="ECyumnsUsotP6BfGi4K2bz" Name="Bot" />
         <Link Id="QttVy5BEhtTLeMzubLSgtW" Ids="OtJuoYtMrNNLez6c11Fr8G,MaWmIqWDvWtOI3RnHJNGoq" />
         <Link Id="CkV19yFIHTINivOAMIJsF8" Ids="IDmqntta1u2MkCViOoy11g,K6nt32GVAAPMZo4SrARJCg" />
         <Link Id="I0OgAvFkJYLMlr36fRiVkU" Ids="BMjPn8iPiaJOo2cPApXn8d,D2Ft4PqPtLcM6o48OLnYqF" />
         <Link Id="Nbh0Wq92TCZMmLZ26jZNl1" Ids="Nfn6s26Bm5PP41c49l3JFm,Def4VpFbcJVMKYZeJuLSbY" />
         <Link Id="VllZPBqj09PNIt7kQewdJe" Ids="MlKvskv10JAOBOuGSPlF0z,CiSC5TpLRk1N2EogHvug1g" />
-        <Link Id="MR14quRv4xvPTVLPJkuCPe" Ids="Vyrrm1FtrFZQRgde8hkuoh,L4l96o6HnJWPkifjPpLXTL" />
         <Link Id="HTU9g8KOQklMv13P96JV1s" Ids="L4l96o6HnJWPkifjPpLXTL,Dj7KWXlOmdpMmudblxbx42" />
         <Link Id="SDxc3OUoAqiNcdXmswThep" Ids="OWQFxYwJJn8QH442o3y3hx,KVrMytVpfs7O5EKrUWStFT" />
         <Link Id="TrodQHNeKfWPWPC47HOgvM" Ids="EqD6glvGYobQFKHc33Mqor,HW0dsVoF7lvLhYPlQ5935j" />
         <Link Id="QfRx4BYAsbzOUi8qTav9hF" Ids="E7plYPaXMvqOc8NkR1kOnT,R0eLF835RZLLW8Oy08kfas" />
         <Link Id="LagpLzJ0CnFOsTgyCMwVne" Ids="BMjPn8iPiaJOo2cPApXn8d,Je6tqvqEVR6MCo47DRu5Cx" />
         <Link Id="SXDKvXTlWhCNX8jDLLCNRJ" Ids="G8ryyZvGSQGLwfaeVROCqK,IJJF4JzTx8HNg7pRMGVLuQ" />
+        <Link Id="CV5Kp45Iay5N8acHhiHBp8" Ids="VcBUl3tztADMelO3DBX2z6,R4I4pnQs3euMeqFaFy2kRi" />
+        <Link Id="JvLW3kY5oXWPklcvLNODI3" Ids="LiJaIuQ8AchQIlfsDnozRI,L4l96o6HnJWPkifjPpLXTL" />
+        <Link Id="DgUCs5ORU0nOxNiFoXIDCR" Ids="LiJaIuQ8AchQIlfsDnozRI,TErhbn3hy4iLtS2XtBFgyM" />
+        <Link Id="IZWDs97HXGgOEf20ZYaxNU" Ids="LiJaIuQ8AchQIlfsDnozRI,VOffuUv2xHMN1HDcQSORMj" />
+        <Link Id="PPmn7r33ICaMgj1E66OC4U" Ids="HbDNNVCsn45NZ9BCIFq6AJ,FAM5U7ALTh8OvNQpyWnLu5" />
+        <Link Id="NV3JPliNYzyO7PyD2UR3Ha" Ids="NxOtz0IkOYgOedtPZkUdl7,GJtcYtWSYLJOFatppq46ON" />
       </Patch>
     </Node>
   </Patch>

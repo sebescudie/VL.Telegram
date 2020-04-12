@@ -2268,145 +2268,8 @@
             </p:NodeReference>
             <Patch Id="FYIkc06sP68NEVOsyQXrlR">
               <Canvas Id="U5yUOSPUrhGMwAFT5GHMhs" CanvasType="Group">
-                <ControlPoint Id="MfuVh9A3BgaN7qTQcIHIQb" Bounds="100,84" />
-                <Node Bounds="370,596,86,85" Id="B5NbrZkApumLIzo0UsMXZ6">
-                  <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
-                    <Choice Kind="ProcessAppFlag" Name="ForEach" />
-                    <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
-                    <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-                  </p:NodeReference>
-                  <Pin Id="IarcoG8MMSjNd6AB51cZsA" Name="Messages" Kind="InputPin" />
-                  <Pin Id="JRsyQxPzoKKP7h28EAX4pi" Name="Reset" Kind="InputPin" />
-                  <Pin Id="PjXh5Tq2uNbPxYX4v3XSX4" Name="Result" Kind="OutputPin" />
-                  <Patch Id="IcFqOUoNcTlPIJO56km6eM" ManuallySortedPins="true">
-                    <Patch Id="Qu4gZJ27J3jL0h2eB6epNz" Name="Create" ManuallySortedPins="true" />
-                    <Patch Id="StP7K0fp3Z4PFuCHS6I5wE" Name="Update" ParticipatingElements="VilARgOkW1TOd6PF0OjopW" ManuallySortedPins="true">
-                      <Pin Id="TdPjmTBssVsOeXY4U1gnl4" Name="Input 1" Kind="InputPin" />
-                      <Pin Id="BAICARhMI4KMbj21SkJglo" Name="Output" Kind="OutputPin" />
-                    </Patch>
-                    <ControlPoint Id="IkyQheYgx73On2ekUNTtiu" Bounds="384,604" />
-                    <ControlPoint Id="NzYPf8qlzVtNxsSkhm6hAU" Bounds="384,674" />
-                    <Node Bounds="382,626,62,26" Id="VilARgOkW1TOd6PF0OjopW">
-                      <p:NodeReference LastCategoryFullName="Telegram.Bot.Types.User" LastSymbolSource="Telegram.Bot.dll">
-                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <Choice Kind="OperationCallFlag" Name="Username" />
-                        <CategoryReference Kind="AssemblyCategory" Name="User" NeedsToBeDirectParent="true" />
-                      </p:NodeReference>
-                      <Pin Id="PDCv0M72kTWLzRb0o1XS6O" Name="Input" Kind="StateInputPin" />
-                      <Pin Id="UgbuhOMJQtqQTz4ZwCOFLd" Name="Username" Kind="OutputPin" />
-                    </Node>
-                  </Patch>
-                </Node>
-                <Node Bounds="370,701,65,19" Id="GkNJoat0XOaLqBAqd4DEGj">
-                  <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
-                  </p:NodeReference>
-                  <Pin Id="AU32iXVDDvCQFkkMzaa1yX" Name="Async Notifications" Kind="InputPin" />
-                  <Pin Id="KUrUlnRqVHjLOAZg5H4iJa" Name="Reset" Kind="InputPin" />
-                  <Pin Id="OBONUMgacPJOtB4Em68qON" Name="Value" Kind="OutputPin" />
-                  <Pin Id="E1u1gncYNKJMoSkwGX4qP3" Name="On Data" Kind="OutputPin" />
-                </Node>
-                <ControlPoint Id="P2tjKIuwJb9M152M4rigvC" Bounds="372,745" />
-                <Node Bounds="86,112,378,432" Id="TClPbdiHdeALzk3VHfBcRg">
-                  <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                    <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-                    <Choice Kind="ProcessStatefulRegion" Name="Cache" />
-                    <FullNameCategoryReference ID="Primitive" />
-                  </p:NodeReference>
-                  <Pin Id="A5s8ZPTDc3IQP5ifcV0sBP" Name="Force" Kind="InputPin" DefaultValue="True">
-                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                      <Choice Kind="TypeFlag" Name="Boolean" />
-                    </p:TypeAnnotation>
-                  </Pin>
-                  <Pin Id="NJvBoDA24g3QcfcgCF6nLA" Name="Dispose Cached Outputs" Kind="InputPin" />
-                  <Pin Id="Piiw1egRpjxOy8edr6PvWK" Name="Has Changed" Kind="OutputPin" />
-                  <Patch Id="GvKuBQ8yYWoMCSfp1FbVgD" ManuallySortedPins="true">
-                    <Patch Id="Is05B504YLgNQNQYCfK8mn" Name="Create" ManuallySortedPins="true" />
-                    <Patch Id="LcVIoNxEmJtLKvzAAAzTpH" Name="Then" ParticipatingElements="NnQBnVAxgwSPMK9dmRejSD,O1RrdOW3Z2lNtHsKesukbO,JpTEo67UYliLTaFvoY1mAp,DILNwjQBkK6MgGaMnMgNE5" ManuallySortedPins="true" />
-                    <Node Bounds="98,151,82,26" Id="NnQBnVAxgwSPMK9dmRejSD">
-                      <p:NodeReference LastCategoryFullName="Telegram.Bot.TelegramBotClient" LastSymbolSource="Telegram.Bot.dll">
-                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <CategoryReference Kind="AssemblyCategory" Name="Telegram" />
-                        <CategoryReference Kind="AssemblyCategory" Name="Bot" />
-                        <CategoryReference Kind="AssemblyCategory" Name="TelegramBotClient" />
-                        <Choice Kind="OperationCallFlag" Name="Create" />
-                        <PinReference Kind="InputPin" Name="Http Client" />
-                      </p:NodeReference>
-                      <Pin Id="GnMK2Yuehu0PI5OOF94ZXo" Name="Token" Kind="InputPin" />
-                      <Pin Id="NT7hGn8XeGxP7lYbpdgQT3" Name="Http Client" Kind="InputPin" />
-                      <Pin Id="C6pUN3lbqcDN7d0cHhP5vQ" Name="Output" Kind="OutputPin" />
-                    </Node>
-                    <Node Bounds="98,214,277,26" Id="O1RrdOW3Z2lNtHsKesukbO">
-                      <p:NodeReference LastCategoryFullName="Telegram.Bot.TelegramBotClient" LastSymbolSource="Telegram.Bot.dll">
-                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <Choice Kind="OperationCallFlag" Name="GetMeAsync" />
-                        <CategoryReference Kind="AssemblyCategory" Name="TelegramBotClient" NeedsToBeDirectParent="true" />
-                      </p:NodeReference>
-                      <Pin Id="LIzBDZeWMPoMtmnYzkyrYY" Name="Input" Kind="StateInputPin" />
-                      <Pin Id="BKNvR9x4MbXN4ZgvUklDzB" Name="Cancellation Token" Kind="InputPin" />
-                      <Pin Id="CcYelhC0NB7OkAWQg4FATw" Name="Output" Kind="StateOutputPin" />
-                      <Pin Id="PIM52ExVIqYPWwVei1c7TI" Name="Result" Kind="OutputPin" />
-                    </Node>
-                    <Node Bounds="370,170,82,26" Id="JpTEo67UYliLTaFvoY1mAp">
-                      <p:NodeReference LastCategoryFullName="Reactive.CancellationToken" LastSymbolSource="VL.Reactive.vl">
-                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <CategoryReference Kind="ClassType" Name="CancellationToken" />
-                        <Choice Kind="OperationCallFlag" Name="Create" />
-                      </p:NodeReference>
-                      <Pin Id="El6dwvwJgOMP6rufqyu4J6" Name="Canceled" Kind="InputPin" />
-                      <Pin Id="J4k2UfFIqiyQCpMt9BAhsL" Name="Output" Kind="StateOutputPin" />
-                    </Node>
-                    <Node Bounds="370,462,79,26" Id="DILNwjQBkK6MgGaMnMgNE5">
-                      <p:NodeReference LastCategoryFullName="Reactive.Task" LastSymbolSource="VL.Reactive.vl">
-                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <Choice Kind="OperationCallFlag" Name="ToObservable" />
-                        <CategoryReference Kind="ClassType" Name="Task" NeedsToBeDirectParent="true" />
-                      </p:NodeReference>
-                      <Pin Id="LIfvyslcLlyL60pGEtIhie" Name="Input" Kind="StateInputPin" />
-                      <Pin Id="EJ7cTZ1utY9NAuSx0JA2fz" Name="Result" Kind="OutputPin" />
-                    </Node>
-                    <Node Bounds="98,473,82,26" Id="SHW3Erl0f95M7QaFg36M4K">
-                      <p:NodeReference LastCategoryFullName="Telegram.Bot.TelegramBotClient" LastSymbolSource="Telegram.Bot.dll">
-                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <Choice Kind="OperationCallFlag" Name="StartReceiving" />
-                        <CategoryReference Kind="AssemblyCategory" Name="TelegramBotClient" NeedsToBeDirectParent="true" />
-                      </p:NodeReference>
-                      <Pin Id="TEJQrVJsuFNP9dKRfmHHPU" Name="Input" Kind="StateInputPin" />
-                      <Pin Id="MM2i6N6WKNvNTcZXgBeMzg" Name="Allowed Updates" Kind="InputPin" />
-                      <Pin Id="GkBoLBXCIl5LNsgF77TzRd" Name="Cancellation Token" Kind="InputPin" />
-                      <Pin Id="LuxIRCH4oxcL9tNBCMace7" Name="Output" Kind="StateOutputPin" />
-                    </Node>
-                    <Pad Id="BCR0jjEcEzeQKBjtdqF5h5" Comment="Allowed Updates" Bounds="139,282,115,111" ShowValueBox="true" isIOBox="true">
-                      <p:TypeAnnotation LastCategoryFullName="Collections.Mutable" LastSymbolSource="VL.Collections.vl">
-                        <Choice Kind="TypeFlag" Name="MutableArray" />
-                        <p:TypeArguments>
-                          <TypeReference LastCategoryFullName="Telegram.Bot.Types.Enums" LastSymbolSource="Telegram.Bot.dll">
-                            <Choice Kind="TypeFlag" Name="UpdateType" />
-                          </TypeReference>
-                        </p:TypeArguments>
-                      </p:TypeAnnotation>
-                      <p:ValueBoxSettings>
-                        <p:maxvisibleentries p:Type="Int32">6</p:maxvisibleentries>
-                      </p:ValueBoxSettings>
-                      <p:Value>
-                        <Item>Message</Item>
-                        <Item>InlineQuery</Item>
-                        <Item>ChosenInlineResult</Item>
-                        <Item>CallbackQuery</Item>
-                        <Item>EditedMessage</Item>
-                        <Item>ChannelPost</Item>
-                      </p:Value>
-                    </Pad>
-                  </Patch>
-                  <ControlPoint Id="QC1JF3A55iWL6tTVGwxilb" Bounds="100,118" Alignment="Top" />
-                  <ControlPoint Id="D4GYKgn0ueDM63YSiR3tGd" Bounds="372,537" Alignment="Bottom" />
-                  <ControlPoint Id="Ofn5RSJrYRXO4CZnHj7BDT" Bounds="100,537" Alignment="Bottom" />
-                </Node>
-                <ControlPoint Id="U8WmKXVgGFDM2fO3mg3Nce" Bounds="100,749" />
-                <Pad Id="OrLGFF0pSm3N9bmhQxptq3" SlotId="IlB5lPFzaV2Mn3EaTY6XWU" Bounds="100,578" />
-                <Pad Id="M4KwKGR8MyEQTDLxWcDpES" SlotId="IlB5lPFzaV2Mn3EaTY6XWU" Bounds="550,521" />
-                <Node Bounds="548,542,82,26" Id="SY7HzHd5xAUOJaxMQxCgf8">
+                <Pad Id="M4KwKGR8MyEQTDLxWcDpES" SlotId="IlB5lPFzaV2Mn3EaTY6XWU" Bounds="1024,681" />
+                <Node Bounds="1022,702,82,26" Id="SY7HzHd5xAUOJaxMQxCgf8">
                   <p:NodeReference LastCategoryFullName="Telegram.Bot.TelegramBotClient" LastSymbolSource="Telegram.Bot.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="StopReceiving" />
@@ -2415,9 +2278,7 @@
                   <Pin Id="IK8qdXRQigNOGEngOfIG6h" Name="Input" Kind="StateInputPin" />
                   <Pin Id="CuehGEjUNhLMWFU02mC97I" Name="Output" Kind="StateOutputPin" />
                 </Node>
-                <ControlPoint Id="F7xILY5Ka9VPdxRvU32nzW" Bounds="88,53" />
-                <ControlPoint Id="MFxtA00KzKdNlaS6flnAYS" Bounds="284,758" />
-                <Node Bounds="537,346,106,80" Id="D26ReETIQ4NOt9n9f0HzLN">
+                <Node Bounds="1011,506,106,80" Id="D26ReETIQ4NOt9n9f0HzLN">
                   <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                     <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -2425,7 +2286,7 @@
                   </p:NodeReference>
                   <Pin Id="ISQ2ENWrvt8Ourh6LQwfAh" Name="Condition" Kind="InputPin" />
                   <Patch Id="B6j5rgKjyG9QKQy229bfcy" ManuallySortedPins="true">
-                    <Node Bounds="549,375,82,26" Id="KS1C8xZhX8BOnTblGpqUTY">
+                    <Node Bounds="1023,535,82,26" Id="KS1C8xZhX8BOnTblGpqUTY">
                       <p:NodeReference LastCategoryFullName="Telegram.Bot.TelegramBotClient" LastSymbolSource="Telegram.Bot.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="StopReceiving" />
@@ -2438,96 +2299,324 @@
                     <Patch Id="RQoJiYbWqnsPNKBIqWcX34" Name="Then" ManuallySortedPins="true" />
                   </Patch>
                 </Node>
-                <Pad Id="Hl1d7rJavgmLX4TovHRRPo" SlotId="IlB5lPFzaV2Mn3EaTY6XWU" Bounds="551,308" />
-                <ControlPoint Id="SVnjkz6gYdoQGE7Qp4YnLU" Bounds="539,287" />
-                <Node Bounds="193,631,108,90" Id="AnISWGVf8qXQJpy9tV8l3p">
-                  <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                    <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-                    <Choice Kind="ApplicationStatefulRegion" Name="If" />
-                    <FullNameCategoryReference ID="Primitive" />
-                  </p:NodeReference>
-                  <Pin Id="S9dmWzxyytBOsZawXYEEPL" Name="Condition" Kind="InputPin" />
-                  <Patch Id="C1AGLcwcwRMPmm7wQcvlv2" ManuallySortedPins="true">
-                    <Patch Id="R57uCRotAsrP0MbEYOQyhs" Name="Create" ManuallySortedPins="true" />
-                    <Patch Id="Nbiuvdgc7AVMnYnR7TUaGQ" Name="Then" ManuallySortedPins="true" />
-                    <Node Bounds="205,666,82,26" Id="PPCOaSVjCX5PSc5Y8e8zF7">
-                      <p:NodeReference LastCategoryFullName="Telegram.Bot.TelegramBotClient" LastSymbolSource="Telegram.Bot.dll">
-                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <Choice Kind="OperationCallFlag" Name="IsReceiving" />
-                        <CategoryReference Kind="AssemblyCategory" Name="TelegramBotClient" NeedsToBeDirectParent="true" />
-                      </p:NodeReference>
-                      <Pin Id="CgfBhLW1R5WONbb5kRL6Gd" Name="Input" Kind="StateInputPin" />
-                      <Pin Id="GxH3mbvAsAIOk5pQWi7PvQ" Name="Output" Kind="StateOutputPin" />
-                      <Pin Id="HvpLgkHDdjINlNQfVTloY5" Name="Is Receiving" Kind="OutputPin" />
-                    </Node>
-                  </Patch>
-                  <ControlPoint Id="BnVWF6Whm7SNKeikx3pOEC" Bounds="284,717" Alignment="Bottom" />
-                  <ControlPoint Id="Shxm3mURw9MMvhuRAPfjeG" Bounds="284,638" Alignment="Top" />
-                </Node>
-                <Node Bounds="193,604,65,19" Id="GjojtWRztAfQR6VeUxwU7G">
+                <Pad Id="Hl1d7rJavgmLX4TovHRRPo" SlotId="IlB5lPFzaV2Mn3EaTY6XWU" Bounds="1023,406" />
+                <ControlPoint Id="SVnjkz6gYdoQGE7Qp4YnLU" Bounds="1012,374" />
+                <Node Bounds="1043,435,65,19" Id="UI2mCvEN41gLJQ5haaRi4O">
                   <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="IsAssigned" />
                   </p:NodeReference>
-                  <Pin Id="BsKtYKiKqGgN6DA1CvW3Wz" Name="X" Kind="InputPin" />
-                  <Pin Id="DHMKG6oCmQnLpTkIp4IL4o" Name="Result" Kind="OutputPin" />
-                  <Pin Id="GISP7zrWEqrPxPu8nhT7oq" Name="Not Assigned" Kind="OutputPin" />
+                  <Pin Id="KDbF9ziLdTMPmGksoRjmNk" Name="X" Kind="InputPin" />
+                  <Pin Id="KnTSAI6S9NiOM2fjoGaLlI" Name="Result" Kind="OutputPin" />
+                  <Pin Id="NaWC7fG0x5dLHMUtqL5Alj" Name="Not Assigned" Kind="OutputPin" />
                 </Node>
+                <Node Bounds="1011,469,37,19" Id="Ikt93lnafCROIqGkOTnhDn">
+                  <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="AND" />
+                  </p:NodeReference>
+                  <Pin Id="G7wCVO4bClfO4geAvw3XEZ" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="IQ6uH9QkBFPQLCd4VD1Ryp" Name="Input 2" Kind="InputPin" />
+                  <Pin Id="U0XhtWrOAhEPuW6a0096Hm" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <ControlPoint Id="RQcYQE6s8O3LpWH5NBQReD" Bounds="202,74" />
+                <Node Bounds="112,120,81,19" Id="QzQqK0mgiu0QSTCsb8OBJl">
+                  <p:NodeReference LastCategoryFullName="Primitive.String" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="IsNullOrEmpty" />
+                  </p:NodeReference>
+                  <Pin Id="Mtfm8Zt6ctSM5YEylD46bx" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="AdGIp9c5vtSLKs4HcGyMbU" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="112,153,37,19" Id="Kdl9klfiYRNM8e1nJ4sK1H">
+                  <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="NOT" />
+                  </p:NodeReference>
+                  <Pin Id="HmYGkR9klNBQOIL6eDVGKI" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="MoCZhGAn0sLNEFrntFhAns" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="80,232,751,632" Id="Aot0GK7AwXILEgWS6siPmm">
+                  <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                    <Choice Kind="ProcessStatefulRegion" Name="Cache" />
+                    <CategoryReference Kind="Category" Name="Primitive" />
+                  </p:NodeReference>
+                  <Pin Id="FH2d1MUN1NwODyuPUyAaQl" Name="Force" Kind="InputPin" />
+                  <Pin Id="Pwq84uUFrNiMzUW7OiaCXs" Name="Dispose Cached Outputs" Kind="InputPin" />
+                  <Pin Id="HVwkzZmYMwzMd7QxXU4UpC" Name="Has Changed" Kind="OutputPin" />
+                  <Patch Id="M0VNBwJt3vnNUuRVLsyqLK" ManuallySortedPins="true">
+                    <Patch Id="GaHtGAczuJ1PyXFgIVcRTA" Name="Create" ManuallySortedPins="true" />
+                    <Patch Id="Swn0rlTsp4lO4zyn1R8ma3" Name="Then" ManuallySortedPins="true" />
+                    <Node Bounds="188,252,351,221" Id="Rhs7rcSoXqhOhcXiUe7a3B">
+                      <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="VL.CoreLib.Experimental.vl">
+                        <Choice Kind="ProcessAppFlag" Name="TryCatch (2Outputs)" />
+                        <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                      </p:NodeReference>
+                      <Pin Id="Sf8H8pmvSkHORonXAs0kI0" Name="Output 1" Kind="OutputPin" />
+                      <Pin Id="HbedT8arkXWM5TAbhpWbJD" Name="Output 2" Kind="OutputPin" />
+                      <Patch Id="HN07mO1RNEaMEWVQtqV6lY" ManuallySortedPins="true">
+                        <Patch Id="PUuWyybC8vQPAaWZS2NddH" Name="Create" ManuallySortedPins="true" />
+                        <Patch Id="QxSFcB4VmGIN4mgvp6TLtY" Name="Try" ManuallySortedPins="true">
+                          <Pin Id="MKZBNCLGNttP7DJweejM9p" Name="Bot Client" Kind="OutputPin" />
+                          <Pin Id="Fvkx9EgHyB3O9AVROnAePZ" Name="Me" Kind="OutputPin" />
+                        </Patch>
+                        <Patch Id="BGmwzK65b35PcWGsYUcd83" Name="Catch" ManuallySortedPins="true">
+                          <Pin Id="CoJ81IrfCRwL0bFvBkFwyX" Name="Input 1" Kind="InputPin" />
+                          <Pin Id="KHr54Y6NuDlPNw3RoZ0qTg" Name="Output 1" Kind="OutputPin" />
+                          <Pin Id="Nxg0hMIF9NUPWUY5Wxlnoa" Name="Output 2" Kind="OutputPin" />
+                        </Patch>
+                        <ControlPoint Id="UnAxABmpWCCN2r3xBYtybK" Bounds="202,466" />
+                        <ControlPoint Id="Lut7M6MJE3qPUz6LrOVWPU" Bounds="279,466" />
+                        <ControlPoint Id="CCKbJK4LhpvLyBKVTNf7p2" Bounds="421,264" />
+                        <ControlPoint Id="QJhnQzqnluFOcCWAK1uQIJ" Bounds="407,463" />
+                        <ControlPoint Id="T0vNU92nfgEO4Yxzi1HR5W" Bounds="473,463" />
+                        <Node Bounds="200,275,82,26" Id="MihHg9hri2TPJEoV2yqrt3">
+                          <p:NodeReference LastCategoryFullName="Telegram.Bot.TelegramBotClient" LastSymbolSource="Telegram.Bot.dll">
+                            <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                            <CategoryReference Kind="AssemblyCategory" Name="Telegram" />
+                            <CategoryReference Kind="AssemblyCategory" Name="Bot" />
+                            <CategoryReference Kind="AssemblyCategory" Name="TelegramBotClient" />
+                            <Choice Kind="OperationCallFlag" Name="Create" />
+                            <PinReference Kind="InputPin" Name="Http Client" />
+                          </p:NodeReference>
+                          <Pin Id="MW4uE1bEsCmM210ZPLZevL" Name="Token" Kind="InputPin" />
+                          <Pin Id="UEjlK7ghNGAMGqjRJ2lMuj" Name="Http Client" Kind="InputPin" />
+                          <Pin Id="EKeQlTRUG9aP4J3AGvCiNO" Name="Output" Kind="OutputPin" />
+                        </Node>
+                        <Node Bounds="200,348,82,26" Id="K9MvmquyuSrOaMwtdvwovq">
+                          <p:NodeReference LastCategoryFullName="Telegram.Bot.TelegramBotClient" LastSymbolSource="Telegram.Bot.dll">
+                            <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                            <Choice Kind="OperationCallFlag" Name="GetMeAsync" />
+                            <CategoryReference Kind="AssemblyCategory" Name="TelegramBotClient" NeedsToBeDirectParent="true" />
+                          </p:NodeReference>
+                          <Pin Id="JknhjIffRsqPFE5uf04rIm" Name="Input" Kind="StateInputPin" />
+                          <Pin Id="EfbRl0L0EYZNWFv8KTX36K" Name="Cancellation Token" Kind="InputPin" />
+                          <Pin Id="IMlvJea1xfLNTtge1bxgFi" Name="Output" Kind="StateOutputPin" />
+                          <Pin Id="TsbIg4SNB78PkQAh1cAPTZ" Name="Result" Kind="OutputPin" />
+                        </Node>
+                        <Node Bounds="277,401,79,26" Id="VmujdmVTpYeQVMwFdsZhnq">
+                          <p:NodeReference LastCategoryFullName="Reactive.Task" LastSymbolSource="VL.Reactive.vl">
+                            <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                            <Choice Kind="OperationCallFlag" Name="ToObservable" />
+                            <CategoryReference Kind="ClassType" Name="Task" NeedsToBeDirectParent="true" />
+                          </p:NodeReference>
+                          <Pin Id="N9hpWQwkmwwNChjkgVjCOU" Name="Input" Kind="StateInputPin" />
+                          <Pin Id="RsmqoOOL8bMONvsUgN3W3s" Name="Result" Kind="OutputPin" />
+                        </Node>
+                        <Node Bounds="277,311,82,26" Id="AhkQZoqsxpONjaU6vAtssy">
+                          <p:NodeReference LastCategoryFullName="Reactive.CancellationToken" LastSymbolSource="VL.Reactive.vl">
+                            <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                            <CategoryReference Kind="ClassType" Name="CancellationToken" />
+                            <Choice Kind="OperationCallFlag" Name="Create" />
+                          </p:NodeReference>
+                          <Pin Id="UgxDOtvIt73NIFGw6quQm0" Name="Canceled" Kind="InputPin" />
+                          <Pin Id="H3qnDE6lEpXNI5Niw1yBXa" Name="Output" Kind="StateOutputPin" />
+                        </Node>
+                        <Node Bounds="419,299,55,26" Id="CsC6Bfzh1gvPeeUCGfSx3J">
+                          <p:NodeReference LastCategoryFullName="Primitive.Exception" LastSymbolSource="CoreLibBasics.vl">
+                            <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                            <CategoryReference Kind="ClassType" Name="Exception" />
+                            <Choice Kind="OperationCallFlag" Name="Message" />
+                          </p:NodeReference>
+                          <Pin Id="ODw5AoHgwfWMyk3XKLtCfB" Name="Input" Kind="StateInputPin" />
+                          <Pin Id="KQEfCj6Fwi5MFBxRvDTFXl" Name="Output" Kind="StateOutputPin" />
+                          <Pin Id="L69GGw50zlXO62r7cGvptK" Name="Message" Kind="OutputPin" />
+                        </Node>
+                        <Node Bounds="469,350,58,26" Id="QhA7XL9wLMLOBUgLDSp3bq">
+                          <p:NodeReference LastCategoryFullName="System.Console" LastSymbolSource="CoreLibBasics.vl">
+                            <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                            <Choice Kind="OperationCallFlag" Name="WriteLine" />
+                            <CategoryReference Kind="ClassType" Name="Console" NeedsToBeDirectParent="true" />
+                          </p:NodeReference>
+                          <Pin Id="HhEog8WsbBeLCP8mCK57vz" Name="Value" Kind="InputPin" />
+                          <Pin Id="DxO6fawnozHMs6rJRU0uiH" Name="Apply" Kind="InputPin" DefaultValue="True">
+                            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                              <Choice Kind="TypeFlag" Name="Boolean" />
+                            </p:TypeAnnotation>
+                          </Pin>
+                        </Node>
+                      </Patch>
+                    </Node>
+                    <Node Bounds="534,525,285,297" Id="HBeNlYIGtCNOyvV7eUVMl0">
+                      <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+                        <Choice Kind="ProcessAppFlag" Name="ForEach" />
+                        <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
+                        <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                      </p:NodeReference>
+                      <Pin Id="QC05A4Y1qiMN6pASnm96Mt" Name="Messages" Kind="InputPin" />
+                      <Pin Id="UnbeZTwyFs7LOTuy9hVWdT" Name="Reset" Kind="InputPin" />
+                      <Pin Id="LUO2fCu4LOeNaamfm2KNdq" Name="Result" Kind="OutputPin" />
+                      <Patch Id="FNXNK8T7BivQWKAjdsnPKy" ManuallySortedPins="true">
+                        <Patch Id="LB42LsTIpm8N86XmbbBCSB" Name="Create" ManuallySortedPins="true" />
+                        <Patch Id="LLimElI48dvM9BVWe9fr1n" Name="Update" ParticipatingElements="FICWUtyJNw0OLAqgQgxsTB" ManuallySortedPins="true">
+                          <Pin Id="PL2BcgedWB1OnJQWduUwal" Name="Input 1" Kind="InputPin" />
+                          <Pin Id="NUITck2wd5sONvqRi6e0Zt" Name="Output" Kind="OutputPin" />
+                        </Patch>
+                        <ControlPoint Id="Rmb9T3ylK43Mpt5GDUqTPm" Bounds="682,707" />
+                        <ControlPoint Id="Hlfub8fscALMfykc1kGJVr" Bounds="548,815" />
+                        <Node Bounds="546,705,82,26" Id="MtwFX2xR7iUNWiJ2h9WaIv">
+                          <p:NodeReference LastCategoryFullName="Telegram.Bot.TelegramBotClient" LastSymbolSource="Telegram.Bot.dll">
+                            <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                            <Choice Kind="OperationCallFlag" Name="StartReceiving" />
+                            <CategoryReference Kind="AssemblyCategory" Name="TelegramBotClient" NeedsToBeDirectParent="true" />
+                          </p:NodeReference>
+                          <Pin Id="NVF9tAGwxHrLzVqZxOUzlc" Name="Input" Kind="StateInputPin" />
+                          <Pin Id="VARALntTBdfPVQTVr7mRMU" Name="Allowed Updates" Kind="InputPin" />
+                          <Pin Id="SbnnG4RaiShLuq6BIY0chn" Name="Cancellation Token" Kind="InputPin" />
+                          <Pin Id="Ja6S1mQ2WyKMtZFFHXqYCG" Name="Output" Kind="StateOutputPin" />
+                        </Node>
+                        <Pad Id="Bh8evBDHZ29PQezKhfZOCi" Comment="Allowed Updates" Bounds="586,553,123,111" ShowValueBox="true" isIOBox="true">
+                          <p:TypeAnnotation LastCategoryFullName="Collections.Mutable" LastSymbolSource="VL.Collections.vl">
+                            <Choice Kind="TypeFlag" Name="MutableArray" />
+                            <p:TypeArguments>
+                              <TypeReference LastCategoryFullName="Telegram.Bot.Types.Enums" LastSymbolSource="Telegram.Bot.dll">
+                                <Choice Kind="TypeFlag" Name="UpdateType" />
+                              </TypeReference>
+                            </p:TypeArguments>
+                          </p:TypeAnnotation>
+                          <p:ValueBoxSettings>
+                            <p:maxvisibleentries p:Type="Int32">6</p:maxvisibleentries>
+                          </p:ValueBoxSettings>
+                          <p:Value>
+                            <Item>Message</Item>
+                            <Item>InlineQuery</Item>
+                            <Item>ChosenInlineResult</Item>
+                            <Item>CallbackQuery</Item>
+                            <Item>EditedMessage</Item>
+                            <Item>ChannelPost</Item>
+                          </p:Value>
+                        </Pad>
+                        <Node Bounds="623,665,82,26" Id="QylBBe27JwBLCyHH0tZStj">
+                          <p:NodeReference LastCategoryFullName="Reactive.CancellationToken" LastSymbolSource="VL.Reactive.vl">
+                            <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                            <CategoryReference Kind="ClassType" Name="CancellationToken" />
+                            <Choice Kind="OperationCallFlag" Name="Create" />
+                          </p:NodeReference>
+                          <Pin Id="QlifWwFR3nxNBqklQvOfjS" Name="Canceled" Kind="InputPin" />
+                          <Pin Id="ThX4VzPV3qVMi3aaM065Sv" Name="Output" Kind="StateOutputPin" />
+                        </Node>
+                        <Node Bounds="546,764,70,26" Id="KngasVgL8RuMoQBl2xFJm7">
+                          <p:NodeReference LastCategoryFullName="Primitive.Tuple (2 Items)" LastSymbolSource="CoreLibBasics.vl">
+                            <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                            <CategoryReference Kind="RecordType" Name="Tuple (2 Items)" />
+                            <Choice Kind="OperationCallFlag" Name="Join" />
+                          </p:NodeReference>
+                          <Pin Id="DYTycZ7evYZQWkAEJodLlL" Name="Item 1" Kind="InputPin" />
+                          <Pin Id="VVuOq0VqOAXLjGYiNQlAR7" Name="Item 2" Kind="InputPin" />
+                          <Pin Id="FAt8cEMssf0QZoTaDPbrvY" Name="Output" Kind="StateOutputPin" />
+                        </Node>
+                        <Node Bounds="680,724,62,26" Id="FICWUtyJNw0OLAqgQgxsTB">
+                          <p:NodeReference LastCategoryFullName="Telegram.Bot.Types.User" LastSymbolSource="Telegram.Bot.dll">
+                            <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                            <Choice Kind="OperationCallFlag" Name="Username" />
+                            <CategoryReference Kind="AssemblyCategory" Name="User" NeedsToBeDirectParent="true" />
+                          </p:NodeReference>
+                          <Pin Id="RNJBTi9jVFGQDwRgJRmGaK" Name="Input" Kind="StateInputPin" />
+                          <Pin Id="Q3stWIdrC9HNS2sUMotUCK" Name="Username" Kind="OutputPin" />
+                        </Node>
+                      </Patch>
+                    </Node>
+                  </Patch>
+                  <ControlPoint Id="JneE5puCJRPPwsWk35gsmZ" Bounds="536,859" Alignment="Bottom" />
+                </Node>
+                <ControlPoint Id="VFjKBtioaqtPOq3udV6TQz" Bounds="81,53" />
+                <Node Bounds="80,181,37,19" Id="SqlbPGY6nKOP2tRhGVtjnL">
+                  <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="AND" />
+                  </p:NodeReference>
+                  <Pin Id="PZ9INRLHmIsL2DGdR4kRNV" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="M2ul1DB8VabNsIPDiilbw8" Name="Input 2" Kind="InputPin" />
+                  <Pin Id="DCzh3ZrHf2hOsyo4NkBkTY" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="534,927,70,26" Id="QIO7NGNOMsUPH1QD3BYxJ4">
+                  <p:NodeReference LastCategoryFullName="Primitive.Tuple (2 Items)" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="RecordType" Name="Tuple (2 Items)" />
+                    <Choice Kind="OperationCallFlag" Name="Split" />
+                  </p:NodeReference>
+                  <Pin Id="USPR2B12xQjOhUDuNSYLVy" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="Bwda3tODThOOoKl6yP5Aas" Name="Item 1" Kind="OutputPin" />
+                  <Pin Id="KaXmlM2cl3gNcWj3aZqbA0" Name="Item 2" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="534,885,65,19" Id="L5fZh9l5IWkLu6IA7zhlJl">
+                  <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
+                  </p:NodeReference>
+                  <Pin Id="Voh7ksbY9zCMWRliP9YB8Z" Name="Async Notifications" Kind="InputPin" />
+                  <Pin Id="HefkBGesmPUPPhQAmYaXPh" Name="Reset" Kind="InputPin" />
+                  <Pin Id="Lyz7Qq7gdo1QPQ1Oy0ULyW" Name="Value" Kind="OutputPin" />
+                  <Pin Id="BqUjYlcYqPeLQTmfZCHjNO" Name="On Data" Kind="OutputPin" />
+                </Node>
+                <ControlPoint Id="BrbB0hnakHIOi8QhY89i2r" Bounds="536,991" />
+                <ControlPoint Id="IpkUtebB2aBPfEzPgbws5W" Bounds="601,991" />
+                <Pad Id="RYJwr5t61kaMDUQFZ3cEoD" SlotId="IlB5lPFzaV2Mn3EaTY6XWU" Bounds="496,991" />
               </Canvas>
               <Patch Id="KfGkI2X5hP6MvliKcX857H" Name="Create" />
               <Patch Id="SHHrCrPDPrxOWBc8UGqYES" Name="Update" ManuallySortedPins="true">
-                <Pin Id="UfVYlweLImxMUC6Cbj5hAe" Name="Output" Kind="OutputPin" Bounds="352,1174" />
-                <Pin Id="PtCGgb1RKfyNmw2CmiGTzm" Name="Username" Kind="OutputPin" Bounds="590,1370" />
-                <Pin Id="HNpD5fnvxbbPbTcU1drSK4" Name="Is Receiving" Kind="OutputPin" Bounds="284,503" />
-                <Pin Id="NSgZPNdUI3HObdp36lIU4Y" Name="Token" Kind="InputPin" />
                 <Pin Id="CE2lGH6fxbqL4ZmVvQbQrE" Name="Start Receiving" Kind="InputPin" Bounds="552,76" DefaultValue="False">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="Boolean" />
                   </p:TypeAnnotation>
                 </Pin>
                 <Pin Id="IXx9kfjzja1OzFt9KPDw20" Name="Stop Receiving" Kind="InputPin" Bounds="793,203" />
+                <Pin Id="QWg4tXM2LbjPDghANg6RaA" Name="Token" Kind="InputPin" Bounds="-208,420" />
+                <Pin Id="IL6L2yKjE5cNiBAZ9QzBCz" Name="Bot" Kind="OutputPin" Bounds="22,1375" />
+                <Pin Id="CvqIpt27JEBLrVZyLSe5Pf" Name="Username" Kind="OutputPin" Bounds="108,1389" />
               </Patch>
               <ProcessDefinition Id="Vzbj7GtIuWwM6tI994HCsQ">
                 <Fragment Id="JMokcTWa1ZzPIKyFvtJPAT" Patch="KfGkI2X5hP6MvliKcX857H" Enabled="true" />
                 <Fragment Id="PhtxjiYlLPmLBKKndOuWoh" Patch="SHHrCrPDPrxOWBc8UGqYES" Enabled="true" />
               </ProcessDefinition>
-              <Link Id="VwxnQZjMMk3PGoXstFJi74" Ids="NSgZPNdUI3HObdp36lIU4Y,MfuVh9A3BgaN7qTQcIHIQb" IsHidden="true" />
-              <Link Id="Db1crmE4dJjLLnkfVBWSpm" Ids="TdPjmTBssVsOeXY4U1gnl4,IkyQheYgx73On2ekUNTtiu" IsHidden="true" />
-              <Link Id="D7dh0JuLu8gOcm7kG5rQ3L" Ids="NzYPf8qlzVtNxsSkhm6hAU,BAICARhMI4KMbj21SkJglo" IsHidden="true" />
-              <Link Id="UF0s6Kx4RaiOdQt4cAUW0v" Ids="IkyQheYgx73On2ekUNTtiu,PDCv0M72kTWLzRb0o1XS6O" />
-              <Link Id="ELxpU3DK9cJPg5aY1Mkt7W" Ids="UgbuhOMJQtqQTz4ZwCOFLd,NzYPf8qlzVtNxsSkhm6hAU" />
-              <Link Id="Ttp8jENOt1hPfOdGb17JaJ" Ids="PjXh5Tq2uNbPxYX4v3XSX4,AU32iXVDDvCQFkkMzaa1yX" />
-              <Link Id="Q9FCNzlaDkcL7EBACNAsQm" Ids="OBONUMgacPJOtB4Em68qON,P2tjKIuwJb9M152M4rigvC" />
-              <Link Id="GPv317Q3el1One1iIw7xRz" Ids="P2tjKIuwJb9M152M4rigvC,PtCGgb1RKfyNmw2CmiGTzm" IsHidden="true" />
-              <Link Id="J9hY5Sp6hdCO95bm8t0XlY" Ids="MfuVh9A3BgaN7qTQcIHIQb,QC1JF3A55iWL6tTVGwxilb" />
-              <Link Id="Gt1g78rpqxWNGJaE38lF6G" Ids="QC1JF3A55iWL6tTVGwxilb,GnMK2Yuehu0PI5OOF94ZXo" />
-              <Link Id="OcOefbJprUiNKISlJhCVeW" Ids="U8WmKXVgGFDM2fO3mg3Nce,UfVYlweLImxMUC6Cbj5hAe" IsHidden="true" />
-              <Link Id="UvbKu0D3P4GLklYCT5r2uu" Ids="D4GYKgn0ueDM63YSiR3tGd,IarcoG8MMSjNd6AB51cZsA" />
-              <Link Id="K7CJkYOD6VCOzfm6stdHlq" Ids="Ofn5RSJrYRXO4CZnHj7BDT,OrLGFF0pSm3N9bmhQxptq3" />
               <Slot Id="IlB5lPFzaV2Mn3EaTY6XWU" Name="Bot" Summary="Your bot" />
-              <Link Id="G6yNmF7GZ54NvGbuNjOyNR" Ids="OrLGFF0pSm3N9bmhQxptq3,U8WmKXVgGFDM2fO3mg3Nce" />
-              <Link Id="Qg9sQdr2numNr5aL3jBpWs" Ids="J4k2UfFIqiyQCpMt9BAhsL,BKNvR9x4MbXN4ZgvUklDzB" />
-              <Link Id="DEjsS0PLKrfPhjsjx5t6D5" Ids="PIM52ExVIqYPWwVei1c7TI,LIfvyslcLlyL60pGEtIhie" />
-              <Link Id="HaY6016VfKOOnfStqoAtSn" Ids="EJ7cTZ1utY9NAuSx0JA2fz,D4GYKgn0ueDM63YSiR3tGd" />
               <Link Id="SL1frZyWBoALeTvnuVxz55" Ids="M4KwKGR8MyEQTDLxWcDpES,IK8qdXRQigNOGEngOfIG6h" />
               <Patch Id="MDJZa4UjDpnQMAlx3TqdxV" Name="Dispose" ParticipatingElements="SY7HzHd5xAUOJaxMQxCgf8" />
-              <Link Id="O1kDszrhw4yPBQiCyHJro5" Ids="C6pUN3lbqcDN7d0cHhP5vQ,LIzBDZeWMPoMtmnYzkyrYY" />
-              <Link Id="UNtlPXuGDuDMjHnLpMXyvL" Ids="CE2lGH6fxbqL4ZmVvQbQrE,F7xILY5Ka9VPdxRvU32nzW" IsHidden="true" />
-              <Link Id="BScHOUfSfH1PxZvtgyaMkW" Ids="OrLGFF0pSm3N9bmhQxptq3,CgfBhLW1R5WONbb5kRL6Gd" />
-              <Link Id="CEtnEAzZIh6Ph67AqzgX6x" Ids="MFxtA00KzKdNlaS6flnAYS,HNpD5fnvxbbPbTcU1drSK4" IsHidden="true" />
               <Link Id="UOjhSIZ518cNoCq8r4cDji" Ids="Hl1d7rJavgmLX4TovHRRPo,O004eieKUdpNkIsBELUza9" />
-              <Link Id="AlFyxSe6n8bPz7anrhlmKI" Ids="SVnjkz6gYdoQGE7Qp4YnLU,ISQ2ENWrvt8Ourh6LQwfAh" />
               <Link Id="Mtkj3uxecd3OpIRPodESjO" Ids="IXx9kfjzja1OzFt9KPDw20,SVnjkz6gYdoQGE7Qp4YnLU" IsHidden="true" />
-              <Link Id="Cy8RYeJ3vctLsGelUfRqID" Ids="OrLGFF0pSm3N9bmhQxptq3,BsKtYKiKqGgN6DA1CvW3Wz" />
-              <Link Id="AcfcIxSnWZgMHo92JkbVlJ" Ids="DHMKG6oCmQnLpTkIp4IL4o,S9dmWzxyytBOsZawXYEEPL" />
-              <Link Id="RdwxY2I6H0gQblPxc1fQHo" Ids="Shxm3mURw9MMvhuRAPfjeG,BnVWF6Whm7SNKeikx3pOEC" IsFeedback="true" />
-              <Link Id="OR4k8MEMWvqQTMg7y6hh7V" Ids="HvpLgkHDdjINlNQfVTloY5,BnVWF6Whm7SNKeikx3pOEC" />
-              <Link Id="SygPlIGaWXOMdYQDpyadgI" Ids="BnVWF6Whm7SNKeikx3pOEC,MFxtA00KzKdNlaS6flnAYS" />
-              <Link Id="UjLHwyUtu70LM1qKNQY7mH" Ids="F7xILY5Ka9VPdxRvU32nzW,A5s8ZPTDc3IQP5ifcV0sBP" />
-              <Link Id="ONb2zKIeTtNLEDRL8jKIv1" Ids="J4k2UfFIqiyQCpMt9BAhsL,GkBoLBXCIl5LNsgF77TzRd" />
-              <Link Id="SJK5OmUXdIfORaiiWPqM9j" Ids="CcYelhC0NB7OkAWQg4FATw,TEJQrVJsuFNP9dKRfmHHPU" />
-              <Link Id="IXR9tdgOwkcNIYAB8NlivQ" Ids="BCR0jjEcEzeQKBjtdqF5h5,MM2i6N6WKNvNTcZXgBeMzg" />
-              <Link Id="VG2tvLLh6LpLrOC24rq9v0" Ids="LuxIRCH4oxcL9tNBCMace7,Ofn5RSJrYRXO4CZnHj7BDT" />
+              <Link Id="NC3sD2V7JPJPoZ4mIGNS3T" Ids="Hl1d7rJavgmLX4TovHRRPo,KDbF9ziLdTMPmGksoRjmNk" />
+              <Link Id="M8vy7CS4B7dLefV0WEPQR0" Ids="KnTSAI6S9NiOM2fjoGaLlI,IQ6uH9QkBFPQLCd4VD1Ryp" />
+              <Link Id="CxouIUOU9KrQFzba9ymXPm" Ids="SVnjkz6gYdoQGE7Qp4YnLU,G7wCVO4bClfO4geAvw3XEZ" />
+              <Link Id="EW1bIwgA7YEOvhiTI2On69" Ids="U0XhtWrOAhEPuW6a0096Hm,ISQ2ENWrvt8Ourh6LQwfAh" />
+              <Link Id="QNe5vOVNq6kPH7ETuqsyTc" Ids="QWg4tXM2LbjPDghANg6RaA,RQcYQE6s8O3LpWH5NBQReD" IsHidden="true" />
+              <Link Id="FVgM8bBdogmOuXt4JIvYZw" Ids="RQcYQE6s8O3LpWH5NBQReD,Mtfm8Zt6ctSM5YEylD46bx" />
+              <Link Id="FEelDBrFGncQVpHm4CA48P" Ids="AdGIp9c5vtSLKs4HcGyMbU,HmYGkR9klNBQOIL6eDVGKI" />
+              <Link Id="S1cnXlXMltlLT1XDoqYYuL" Ids="VFjKBtioaqtPOq3udV6TQz,PZ9INRLHmIsL2DGdR4kRNV" />
+              <Link Id="IHf0sMeI2JmMrN0r6PhNLe" Ids="CE2lGH6fxbqL4ZmVvQbQrE,VFjKBtioaqtPOq3udV6TQz" IsHidden="true" />
+              <Link Id="J7DJOzAKA94NUlYIi4Dq6N" Ids="DCzh3ZrHf2hOsyo4NkBkTY,FH2d1MUN1NwODyuPUyAaQl" />
+              <Link Id="D90uMEU5C63Pf7Vtc0zhpF" Ids="MoCZhGAn0sLNEFrntFhAns,M2ul1DB8VabNsIPDiilbw8" />
+              <Link Id="FymyAbtdbeJNYgjdZKjgNO" Ids="UnAxABmpWCCN2r3xBYtybK,MKZBNCLGNttP7DJweejM9p" IsHidden="true" />
+              <Link Id="SHI8yuuZLBHOb2ohIRhuAf" Ids="Lut7M6MJE3qPUz6LrOVWPU,Fvkx9EgHyB3O9AVROnAePZ" IsHidden="true" />
+              <Link Id="QqJ3MHbKYYSMbYhGwfwZO6" Ids="CoJ81IrfCRwL0bFvBkFwyX,CCKbJK4LhpvLyBKVTNf7p2" IsHidden="true" />
+              <Link Id="AFBBrHDAzgtL2HpVZXsEMb" Ids="QJhnQzqnluFOcCWAK1uQIJ,KHr54Y6NuDlPNw3RoZ0qTg" IsHidden="true" />
+              <Link Id="Ty6YfLTeNe2MU6mMRdYSao" Ids="T0vNU92nfgEO4Yxzi1HR5W,Nxg0hMIF9NUPWUY5Wxlnoa" IsHidden="true" />
+              <Link Id="NuLToSsERyMMYSrj7SCnGk" Ids="EKeQlTRUG9aP4J3AGvCiNO,JknhjIffRsqPFE5uf04rIm" />
+              <Link Id="N3oj8QIM4DSPaP5honFNzl" Ids="TsbIg4SNB78PkQAh1cAPTZ,N9hpWQwkmwwNChjkgVjCOU" />
+              <Link Id="Rk6OnPUEA60Nz5TufWIjYx" Ids="H3qnDE6lEpXNI5Niw1yBXa,EfbRl0L0EYZNWFv8KTX36K" />
+              <Link Id="LMtnkfjX1zDLkGHBloiNFX" Ids="RsmqoOOL8bMONvsUgN3W3s,Lut7M6MJE3qPUz6LrOVWPU" />
+              <Link Id="KBGGQyhvTG0OTP69UK1Vnb" Ids="IMlvJea1xfLNTtge1bxgFi,UnAxABmpWCCN2r3xBYtybK" />
+              <Link Id="F4CsMP6aPVLOuooRiSkhlz" Ids="RQcYQE6s8O3LpWH5NBQReD,MW4uE1bEsCmM210ZPLZevL" />
+              <Link Id="C5kMTnpjYndPXL5ueCC2ZB" Ids="CCKbJK4LhpvLyBKVTNf7p2,ODw5AoHgwfWMyk3XKLtCfB" />
+              <Link Id="O6iFT1YXiFiPqqvtSqavSw" Ids="L69GGw50zlXO62r7cGvptK,HhEog8WsbBeLCP8mCK57vz" />
+              <Link Id="BlXkg6uuKg1MvSCqGAWz7s" Ids="PL2BcgedWB1OnJQWduUwal,Rmb9T3ylK43Mpt5GDUqTPm" IsHidden="true" />
+              <Link Id="PkYqG702ZE0MdhkdxzxFe5" Ids="Hlfub8fscALMfykc1kGJVr,NUITck2wd5sONvqRi6e0Zt" IsHidden="true" />
+              <Link Id="RdVSsvbxmq7MUzXOckqO7u" Ids="HbedT8arkXWM5TAbhpWbJD,QC05A4Y1qiMN6pASnm96Mt" />
+              <Link Id="Ei1GV6UAwRiODOOGK2C6Zk" Ids="Sf8H8pmvSkHORonXAs0kI0,NVF9tAGwxHrLzVqZxOUzlc" />
+              <Link Id="DJ2LNG5P8d7Mj14tjJtY0u" Ids="Bh8evBDHZ29PQezKhfZOCi,VARALntTBdfPVQTVr7mRMU" />
+              <Link Id="P9y13xgjANTPOxR3SxBDTv" Ids="ThX4VzPV3qVMi3aaM065Sv,SbnnG4RaiShLuq6BIY0chn" />
+              <Link Id="Fcd7rQBaIPLP1N2CHaOtXX" Ids="Ja6S1mQ2WyKMtZFFHXqYCG,DYTycZ7evYZQWkAEJodLlL" />
+              <Link Id="J2sEhquNV3iQbiCu6vj5Ir" Ids="Rmb9T3ylK43Mpt5GDUqTPm,RNJBTi9jVFGQDwRgJRmGaK" />
+              <Link Id="QQs24iEEq9BOkvGaU7bF15" Ids="Q3stWIdrC9HNS2sUMotUCK,VVuOq0VqOAXLjGYiNQlAR7" />
+              <Link Id="CH3iOup5QaxOdlUFrxByYb" Ids="FAt8cEMssf0QZoTaDPbrvY,Hlfub8fscALMfykc1kGJVr" />
+              <Link Id="OSPGOVDDL2PPTn3226qcMa" Ids="LUO2fCu4LOeNaamfm2KNdq,JneE5puCJRPPwsWk35gsmZ" />
+              <Link Id="OPxY1mPRHNhPH7Tl99QZ3U" Ids="JneE5puCJRPPwsWk35gsmZ,Voh7ksbY9zCMWRliP9YB8Z" />
+              <Link Id="KHTiFO4WIsqOma0fZJlHwI" Ids="Lyz7Qq7gdo1QPQ1Oy0ULyW,USPR2B12xQjOhUDuNSYLVy" />
+              <Link Id="TieMwQO6RxPMZr8ySEGRL9" Ids="Bwda3tODThOOoKl6yP5Aas,BrbB0hnakHIOi8QhY89i2r" />
+              <Link Id="SZbDhX0KGq5QTjyutCetSu" Ids="BrbB0hnakHIOi8QhY89i2r,IL6L2yKjE5cNiBAZ9QzBCz" IsHidden="true" />
+              <Link Id="TKEwkJ8bLqlPIu7bGYDmsm" Ids="KaXmlM2cl3gNcWj3aZqbA0,IpkUtebB2aBPfEzPgbws5W" />
+              <Link Id="N2haoEOsFqGMLtPfQw6lNo" Ids="IpkUtebB2aBPfEzPgbws5W,CvqIpt27JEBLrVZyLSe5Pf" IsHidden="true" />
+              <Link Id="TSUkS2YYN8QQPbyuJAX0pv" Ids="Bwda3tODThOOoKl6yP5Aas,RYJwr5t61kaMDUQFZ3cEoD" />
             </Patch>
           </Node>
         </Canvas>
