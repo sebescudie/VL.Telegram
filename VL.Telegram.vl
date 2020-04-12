@@ -2553,18 +2553,54 @@
                 <ControlPoint Id="BrbB0hnakHIOi8QhY89i2r" Bounds="536,991" />
                 <ControlPoint Id="IpkUtebB2aBPfEzPgbws5W" Bounds="601,991" />
                 <Pad Id="RYJwr5t61kaMDUQFZ3cEoD" SlotId="IlB5lPFzaV2Mn3EaTY6XWU" Bounds="496,991" />
+                <Node Bounds="719,926,65,19" Id="Bm8auXlwK4ZOVjxtcf65ks">
+                  <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="IsAssigned" />
+                  </p:NodeReference>
+                  <Pin Id="MX56JGbTA4bOl38E0uh3Jv" Name="X" Kind="InputPin" />
+                  <Pin Id="JkIl7Y7czvJQRezihCJkum" Name="Result" Kind="OutputPin" />
+                  <Pin Id="ILvgIY60kLTLP2LcMCZuta" Name="Not Assigned" Kind="OutputPin" />
+                </Node>
+                <Pad Id="PUSP7EAeA3jOGFt4Jinv0j" SlotId="IlB5lPFzaV2Mn3EaTY6XWU" Bounds="721,899" />
+                <Node Bounds="719,960,108,80" Id="DSztLCco3tKLb9dK1SZ3TY">
+                  <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                    <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                    <CategoryReference Kind="Category" Name="Primitive" />
+                  </p:NodeReference>
+                  <Pin Id="FOKU9PucaGENUHjMkfcBur" Name="Condition" Kind="InputPin" />
+                  <Patch Id="RZCJzy35dEvPGLEoYA34ke" ManuallySortedPins="true">
+                    <Patch Id="M6zRZ2kWlErMbsd4qL7AeS" Name="Create" ManuallySortedPins="true" />
+                    <Patch Id="BrIOMM9E66eLmfv68jjw52" Name="Then" ManuallySortedPins="true" />
+                    <Node Bounds="731,989,82,26" Id="S5iAclQGOksMFTg1XjNOfj">
+                      <p:NodeReference LastCategoryFullName="Telegram.Bot.TelegramBotClient" LastSymbolSource="Telegram.Bot.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="IsReceiving" />
+                        <CategoryReference Kind="AssemblyCategory" Name="TelegramBotClient" NeedsToBeDirectParent="true" />
+                      </p:NodeReference>
+                      <Pin Id="Etf9cJPVkMjLdcK4AxWGeO" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="Kc18kvi3pAcNNpivflx1lH" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="F9WEuyGjDTdQWhthcjVDzL" Name="Is Receiving" Kind="OutputPin" />
+                    </Node>
+                  </Patch>
+                  <ControlPoint Id="KBrqtdVPx18QVHBJ53ZIST" Bounds="810,1034" Alignment="Bottom" />
+                  <ControlPoint Id="OERXTDpRgUEPwT1GfRE3jv" Bounds="810,966" Alignment="Top" />
+                </Node>
+                <ControlPoint Id="Ms44tEwAnYaMx2UuJG3Yik" Bounds="810,1070" />
               </Canvas>
               <Patch Id="KfGkI2X5hP6MvliKcX857H" Name="Create" />
               <Patch Id="SHHrCrPDPrxOWBc8UGqYES" Name="Update" ManuallySortedPins="true">
+                <Pin Id="QWg4tXM2LbjPDghANg6RaA" Name="Token" Kind="InputPin" Bounds="-208,420" />
                 <Pin Id="CE2lGH6fxbqL4ZmVvQbQrE" Name="Start Receiving" Kind="InputPin" Bounds="552,76" DefaultValue="False">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="Boolean" />
                   </p:TypeAnnotation>
                 </Pin>
                 <Pin Id="IXx9kfjzja1OzFt9KPDw20" Name="Stop Receiving" Kind="InputPin" Bounds="793,203" />
-                <Pin Id="QWg4tXM2LbjPDghANg6RaA" Name="Token" Kind="InputPin" Bounds="-208,420" />
                 <Pin Id="IL6L2yKjE5cNiBAZ9QzBCz" Name="Bot" Kind="OutputPin" Bounds="22,1375" />
                 <Pin Id="CvqIpt27JEBLrVZyLSe5Pf" Name="Username" Kind="OutputPin" Bounds="108,1389" />
+                <Pin Id="UjUeeIyO1ulMtDq5trYYGQ" Name="Is Receiving" Kind="OutputPin" Bounds="808,1079" />
               </Patch>
               <ProcessDefinition Id="Vzbj7GtIuWwM6tI994HCsQ">
                 <Fragment Id="JMokcTWa1ZzPIKyFvtJPAT" Patch="KfGkI2X5hP6MvliKcX857H" Enabled="true" />
@@ -2617,6 +2653,13 @@
               <Link Id="TKEwkJ8bLqlPIu7bGYDmsm" Ids="KaXmlM2cl3gNcWj3aZqbA0,IpkUtebB2aBPfEzPgbws5W" />
               <Link Id="N2haoEOsFqGMLtPfQw6lNo" Ids="IpkUtebB2aBPfEzPgbws5W,CvqIpt27JEBLrVZyLSe5Pf" IsHidden="true" />
               <Link Id="TSUkS2YYN8QQPbyuJAX0pv" Ids="Bwda3tODThOOoKl6yP5Aas,RYJwr5t61kaMDUQFZ3cEoD" />
+              <Link Id="LCzZQXDvHsoPMzeA8aWxnY" Ids="PUSP7EAeA3jOGFt4Jinv0j,MX56JGbTA4bOl38E0uh3Jv" />
+              <Link Id="PD9znhMTXCvMRig3Un5Os1" Ids="JkIl7Y7czvJQRezihCJkum,FOKU9PucaGENUHjMkfcBur" />
+              <Link Id="FB9ImHHbiW1Px3snw9D9z5" Ids="PUSP7EAeA3jOGFt4Jinv0j,Etf9cJPVkMjLdcK4AxWGeO" />
+              <Link Id="FuYCeHGsKOePwSmbAKznKb" Ids="OERXTDpRgUEPwT1GfRE3jv,KBrqtdVPx18QVHBJ53ZIST" IsFeedback="true" />
+              <Link Id="Id2sMCLdDC1PVya7G9kdln" Ids="F9WEuyGjDTdQWhthcjVDzL,KBrqtdVPx18QVHBJ53ZIST" />
+              <Link Id="KXQKh28tUpsMmKUCoqVrLB" Ids="KBrqtdVPx18QVHBJ53ZIST,Ms44tEwAnYaMx2UuJG3Yik" />
+              <Link Id="FXjNJMctEwFP1hDDr72BbF" Ids="Ms44tEwAnYaMx2UuJG3Yik,UjUeeIyO1ulMtDq5trYYGQ" IsHidden="true" />
             </Patch>
           </Node>
         </Canvas>
