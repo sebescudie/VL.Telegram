@@ -1483,14 +1483,14 @@
           </ProcessDefinition>
         </Patch>
       </Node>
-      <Canvas Id="Nxxdx3V7MwiOX9HcHZvYg6" Name="Utilities" Position="349,589">
-        <Canvas Id="NmWeI2pIr1zPrgcLeaj7lG" Name="Message" Position="430,534">
+      <Canvas Id="Nxxdx3V7MwiOX9HcHZvYg6" Name="Utilities" Position="353,588">
+        <Canvas Id="NmWeI2pIr1zPrgcLeaj7lG" Name="Message" Position="135,165">
           <!--
 
     ************************ OnMessage ************************
 
 -->
-          <Node Name="OnMessage" Bounds="402,340" Id="SKvNEE2A2dMQNwSGSlS0Mu">
+          <Node Name="OnMessage" Bounds="396,340" Id="SKvNEE2A2dMQNwSGSlS0Mu" Summary="When a message is received, outputs an Observable carrying the said message.">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
               <Choice Kind="ContainerDefinition" Name="Process" />
             </p:NodeReference>
@@ -1599,7 +1599,7 @@
     ************************ SendTextMessage ************************
 
 -->
-          <Node Name="SendTextMessage" Bounds="402,452" Id="LTpUEjPV2bAOVz3D7Tdm5w">
+          <Node Name="SendTextMessage" Bounds="396,452" Id="LTpUEjPV2bAOVz3D7Tdm5w" Summary="Sends a text message to the client.">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
               <Choice Kind="ContainerDefinition" Name="Process" />
             </p:NodeReference>
@@ -1710,7 +1710,7 @@
     ************************ FilterByType ************************
 
 -->
-          <Node Name="FilterByType" Bounds="402,396" Id="HeLnVHPtulsQDX1LssVkqe">
+          <Node Name="FilterByType" Bounds="396,396" Id="HeLnVHPtulsQDX1LssVkqe" Summary="Allows to filter Message observables according to their type.">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
               <Choice Kind="ContainerDefinition" Name="Process" />
             </p:NodeReference>
@@ -1791,7 +1791,7 @@
     ************************ SendPhoto ************************
 
 -->
-          <Node Name="SendPhoto" Bounds="402,508" Id="USSu7US5tcsOaD0dI5Fl0s">
+          <Node Name="SendPhoto" Bounds="396,508" Id="USSu7US5tcsOaD0dI5Fl0s" Summary="Sends a photo from a file to a client.">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
               <Choice Kind="ContainerDefinition" Name="Process" />
             </p:NodeReference>
@@ -2009,7 +2009,7 @@
     ************************ SendImage ************************
 
 -->
-          <Node Name="SendImage" Bounds="562,538" Id="Dn5NKiFMESyPCuPXp99Ry1">
+          <Node Name="SendImage" Bounds="396,564" Id="Dn5NKiFMESyPCuPXp99Ry1" Summary="Sends an SKImage to the client.">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
               <Choice Kind="ContainerDefinition" Name="Process" />
             </p:NodeReference>
@@ -2247,13 +2247,13 @@
             </Patch>
           </Node>
         </Canvas>
-        <Canvas Id="TTfnjxWldCDOzRQhgERNm3" Name="Bot" Position="430,583">
+        <Canvas Id="TTfnjxWldCDOzRQhgERNm3" Name="Bot" Position="135,266">
           <!--
 
     ************************ BotClient ************************
 
 -->
-          <Node Name="BotClient" Bounds="408,423" Id="NhxqTR5E1FrO2Hr7JuSJp3">
+          <Node Name="BotClient" Bounds="408,423" Id="NhxqTR5E1FrO2Hr7JuSJp3" Summary="Connects to a bot" Remarks="To create your own bot, talk to BotFather on Telegram and follow the instructions" Tags="telegram,bot">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
               <Choice Kind="ContainerDefinition" Name="Process" />
             </p:NodeReference>
@@ -2299,7 +2299,7 @@
                   <Pin Id="E1u1gncYNKJMoSkwGX4qP3" Name="On Data" Kind="OutputPin" />
                 </Node>
                 <ControlPoint Id="P2tjKIuwJb9M152M4rigvC" Bounds="372,745" />
-                <Node Bounds="86,112,378,431" Id="TClPbdiHdeALzk3VHfBcRg">
+                <Node Bounds="86,112,378,432" Id="TClPbdiHdeALzk3VHfBcRg">
                   <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                     <Choice Kind="ProcessStatefulRegion" Name="Cache" />
@@ -2348,7 +2348,7 @@
                       <Pin Id="El6dwvwJgOMP6rufqyu4J6" Name="Canceled" Kind="InputPin" />
                       <Pin Id="J4k2UfFIqiyQCpMt9BAhsL" Name="Output" Kind="StateOutputPin" />
                     </Node>
-                    <Node Bounds="370,261,79,26" Id="DILNwjQBkK6MgGaMnMgNE5">
+                    <Node Bounds="370,462,79,26" Id="DILNwjQBkK6MgGaMnMgNE5">
                       <p:NodeReference LastCategoryFullName="Reactive.Task" LastSymbolSource="VL.Reactive.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="ToObservable" />
@@ -2406,9 +2406,9 @@
                   <Pin Id="IK8qdXRQigNOGEngOfIG6h" Name="Input" Kind="StateInputPin" />
                   <Pin Id="CuehGEjUNhLMWFU02mC97I" Name="Output" Kind="StateOutputPin" />
                 </Node>
-                <ControlPoint Id="F7xILY5Ka9VPdxRvU32nzW" Bounds="524,46" />
+                <ControlPoint Id="F7xILY5Ka9VPdxRvU32nzW" Bounds="88,53" />
                 <ControlPoint Id="MFxtA00KzKdNlaS6flnAYS" Bounds="284,758" />
-                <Node Bounds="816,539,106,80" Id="D26ReETIQ4NOt9n9f0HzLN">
+                <Node Bounds="537,346,106,80" Id="D26ReETIQ4NOt9n9f0HzLN">
                   <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                     <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -2416,7 +2416,7 @@
                   </p:NodeReference>
                   <Pin Id="ISQ2ENWrvt8Ourh6LQwfAh" Name="Condition" Kind="InputPin" />
                   <Patch Id="B6j5rgKjyG9QKQy229bfcy" ManuallySortedPins="true">
-                    <Node Bounds="828,568,82,26" Id="KS1C8xZhX8BOnTblGpqUTY">
+                    <Node Bounds="549,375,82,26" Id="KS1C8xZhX8BOnTblGpqUTY">
                       <p:NodeReference LastCategoryFullName="Telegram.Bot.TelegramBotClient" LastSymbolSource="Telegram.Bot.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="StopReceiving" />
@@ -2429,8 +2429,8 @@
                     <Patch Id="RQoJiYbWqnsPNKBIqWcX34" Name="Then" ManuallySortedPins="true" />
                   </Patch>
                 </Node>
-                <Pad Id="Hl1d7rJavgmLX4TovHRRPo" SlotId="IlB5lPFzaV2Mn3EaTY6XWU" Bounds="830,501" />
-                <ControlPoint Id="SVnjkz6gYdoQGE7Qp4YnLU" Bounds="818,451" />
+                <Pad Id="Hl1d7rJavgmLX4TovHRRPo" SlotId="IlB5lPFzaV2Mn3EaTY6XWU" Bounds="551,308" />
+                <ControlPoint Id="SVnjkz6gYdoQGE7Qp4YnLU" Bounds="539,287" />
                 <Node Bounds="193,631,108,90" Id="AnISWGVf8qXQJpy9tV8l3p">
                   <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
@@ -2466,16 +2466,16 @@
                 </Node>
               </Canvas>
               <Patch Id="KfGkI2X5hP6MvliKcX857H" Name="Create" />
-              <Patch Id="SHHrCrPDPrxOWBc8UGqYES" Name="Update">
-                <Pin Id="PtCGgb1RKfyNmw2CmiGTzm" Name="Username" Kind="OutputPin" Bounds="590,1370" />
-                <Pin Id="NSgZPNdUI3HObdp36lIU4Y" Name="Token" Kind="InputPin" />
+              <Patch Id="SHHrCrPDPrxOWBc8UGqYES" Name="Update" ManuallySortedPins="true">
                 <Pin Id="UfVYlweLImxMUC6Cbj5hAe" Name="Output" Kind="OutputPin" Bounds="352,1174" />
-                <Pin Id="CE2lGH6fxbqL4ZmVvQbQrE" Name="Connect" Kind="InputPin" Bounds="552,76" DefaultValue="False">
+                <Pin Id="PtCGgb1RKfyNmw2CmiGTzm" Name="Username" Kind="OutputPin" Bounds="590,1370" />
+                <Pin Id="HNpD5fnvxbbPbTcU1drSK4" Name="Is Receiving" Kind="OutputPin" Bounds="284,503" />
+                <Pin Id="NSgZPNdUI3HObdp36lIU4Y" Name="Token" Kind="InputPin" />
+                <Pin Id="CE2lGH6fxbqL4ZmVvQbQrE" Name="Start Receiving" Kind="InputPin" Bounds="552,76" DefaultValue="False">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="Boolean" />
                   </p:TypeAnnotation>
                 </Pin>
-                <Pin Id="HNpD5fnvxbbPbTcU1drSK4" Name="Is Receiving" Kind="OutputPin" Bounds="284,503" />
                 <Pin Id="IXx9kfjzja1OzFt9KPDw20" Name="Stop Receiving" Kind="InputPin" Bounds="793,203" />
               </Patch>
               <ProcessDefinition Id="Vzbj7GtIuWwM6tI994HCsQ">
@@ -2495,7 +2495,7 @@
               <Link Id="OcOefbJprUiNKISlJhCVeW" Ids="U8WmKXVgGFDM2fO3mg3Nce,UfVYlweLImxMUC6Cbj5hAe" IsHidden="true" />
               <Link Id="UvbKu0D3P4GLklYCT5r2uu" Ids="D4GYKgn0ueDM63YSiR3tGd,IarcoG8MMSjNd6AB51cZsA" />
               <Link Id="K7CJkYOD6VCOzfm6stdHlq" Ids="Ofn5RSJrYRXO4CZnHj7BDT,OrLGFF0pSm3N9bmhQxptq3" />
-              <Slot Id="IlB5lPFzaV2Mn3EaTY6XWU" Name="Bot" />
+              <Slot Id="IlB5lPFzaV2Mn3EaTY6XWU" Name="Bot" Summary="Your bot" />
               <Link Id="G6yNmF7GZ54NvGbuNjOyNR" Ids="OrLGFF0pSm3N9bmhQxptq3,U8WmKXVgGFDM2fO3mg3Nce" />
               <Link Id="Qg9sQdr2numNr5aL3jBpWs" Ids="J4k2UfFIqiyQCpMt9BAhsL,BKNvR9x4MbXN4ZgvUklDzB" />
               <Link Id="DEjsS0PLKrfPhjsjx5t6D5" Ids="PIM52ExVIqYPWwVei1c7TI,LIfvyslcLlyL60pGEtIhie" />
@@ -2521,42 +2521,14 @@
               <Link Id="VG2tvLLh6LpLrOC24rq9v0" Ids="LuxIRCH4oxcL9tNBCMace7,Ofn5RSJrYRXO4CZnHj7BDT" />
             </Patch>
           </Node>
-          <!--
-
-    ************************ AvoidNULL ************************
-
--->
-          <Node Name="AvoidNULL" Bounds="456,517" Id="NuvEuRLgaHeLw7cSx1PWgh">
-            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
-              <Choice Kind="ContainerDefinition" Name="Process" />
-            </p:NodeReference>
-            <Patch Id="DMwoetN317wLwkoPYHQKZg">
-              <Canvas Id="MkRx2u2v8yQORpIaX1ThSY" CanvasType="Group">
-                <ControlPoint Id="QFckDDsiwvOOizrQz9IbF7" Bounds="404,359" />
-              </Canvas>
-              <Patch Id="Apf546OU89MPdqBhC4tv3X" Name="Create" />
-              <Patch Id="IgKxXXGmkZXOw7fLvEBN7W" Name="Update">
-                <Pin Id="RKuyavFKpYuQGjnx5Qlucq" Name="Input" Kind="InputPin">
-                  <p:TypeAnnotation>
-                    <Choice Kind="TypeFlag" Name="TelegramBotClient" />
-                  </p:TypeAnnotation>
-                </Pin>
-              </Patch>
-              <ProcessDefinition Id="IGFj91s2UgPNtK23qpMkNS">
-                <Fragment Id="RzdSifCdAzRPcfq8R99rr4" Patch="Apf546OU89MPdqBhC4tv3X" Enabled="true" />
-                <Fragment Id="GLN5NvBT7teQAqjSWQyyTF" Patch="IgKxXXGmkZXOw7fLvEBN7W" Enabled="true" />
-              </ProcessDefinition>
-              <Link Id="KgWxyuVJpJrMEsaoNidnel" Ids="RKuyavFKpYuQGjnx5Qlucq,QFckDDsiwvOOizrQz9IbF7" IsHidden="true" />
-            </Patch>
-          </Node>
         </Canvas>
-        <Canvas Id="E9kXyLf2Rp6MrTwTnCcLqn" Name="Keyboards" Position="430,632">
+        <Canvas Id="E9kXyLf2Rp6MrTwTnCcLqn" Name="Keyboards" Position="135,352">
           <!--
 
     ************************ ReplyKeyboard ************************
 
 -->
-          <Node Name="ReplyKeyboard" Bounds="373,485" Id="FJa9O3hAQ09QRAM8WMHP9b">
+          <Node Name="ReplyKeyboard" Bounds="373,485" Id="FJa9O3hAQ09QRAM8WMHP9b" Summary="Sends a ReplyKeyboard to the client." Remarks="A ReplyKeyboard pops a custom keyboard on the client's device. When one of its buttons is pressed, it posts the attached text as a message in the chat.">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
               <Choice Kind="ContainerDefinition" Name="Process" />
             </p:NodeReference>
@@ -2673,7 +2645,7 @@
     ************************ InlineKeyboard ************************
 
 -->
-          <Node Name="InlineKeyboard" Bounds="373,545" Id="KbGfrQoCCrmNCcSTLgfmGN">
+          <Node Name="InlineKeyboard" Bounds="373,545" Id="KbGfrQoCCrmNCcSTLgfmGN" Summary="Sends an Inline Keyboard to the client." Remarks="An inline keyboard does not post anything in the chat, but triggers a callback in your patch. You can then patch whetever you like in response to the press of a button.">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
               <Choice Kind="ContainerDefinition" Name="Process" />
             </p:NodeReference>
@@ -2819,13 +2791,13 @@
             </Patch>
           </Node>
         </Canvas>
-        <Canvas Id="Mg0Io61UCoZP9vJmHt96Qy" Name="CallbackQuery" Position="428,695">
+        <Canvas Id="Mg0Io61UCoZP9vJmHt96Qy" Name="CallbackQuery" Position="135,438">
           <!--
 
     ************************ OnCallbackQuery ************************
 
 -->
-          <Node Name="OnCallbackQuery" Bounds="411,281" Id="TLDQ0uDFDcnPy6nkT5lh2G">
+          <Node Name="OnCallbackQuery" Bounds="411,281" Id="TLDQ0uDFDcnPy6nkT5lh2G" Summary="When a user presses a button of an InlineKeyboard, outputs an Observable carrying that query">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
               <Choice Kind="ContainerDefinition" Name="Process" />
             </p:NodeReference>
@@ -2934,7 +2906,7 @@
     ************************ ReactOnCallbackQuery ************************
 
 -->
-          <Node Name="ReactOnCallbackQuery" Bounds="411,377" Id="GzkX5Qina2gOImGXbh6Tu5">
+          <Node Name="ReactOnCallbackQuery" Bounds="411,360" Id="GzkX5Qina2gOImGXbh6Tu5" Summary="A stateless region for you to react on a query." Remarks="Automatically answers the callback query">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
               <Choice Kind="ContainerDefinition" Name="Process" />
             </p:NodeReference>
@@ -3140,7 +3112,7 @@
     ************************ FilterByDataQuery ************************
 
 -->
-          <Node Name="FilterByDataQuery" Bounds="411,442" Id="UM8jijiS9VQMMrscmjubbT">
+          <Node Name="FilterByDataQuery" Bounds="411,439" Id="UM8jijiS9VQMMrscmjubbT" Summary="Filters incoming CallbackQueries based on the DataQuery they carry. Outputs an observable containing the DataQuery if it matches.">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
               <Choice Kind="ContainerDefinition" Name="Process" />
             </p:NodeReference>
@@ -3221,7 +3193,7 @@
     ************************ AnswerCallbackQuery ************************
 
 -->
-          <Node Name="AnswerCallbackQuery" Bounds="424,520" Id="AyvDExBpzu3OW1NpNp1sx7">
+          <Node Name="AnswerCallbackQuery" Bounds="411,518" Id="AyvDExBpzu3OW1NpNp1sx7" Summary="Answers a callback query." Remarks="This pops a small overlay on the client's device, confirming the query has been processed by the bot.">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
               <Choice Kind="ContainerDefinition" Name="Process" />
             </p:NodeReference>
@@ -3293,6 +3265,42 @@
             </Patch>
           </Node>
         </Canvas>
+        <Pad Id="UFjXRtqPtNsQZgNeJui8DJ" Bounds="299,145,250,20" ShowValueBox="true" isIOBox="true" Value="Send/receive text messages and photos">
+          <p:TypeAnnotation>
+            <Choice Kind="TypeFlag" Name="String" />
+          </p:TypeAnnotation>
+          <p:ValueBoxSettings>
+            <p:fontsize p:Type="Int32">9</p:fontsize>
+            <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+          </p:ValueBoxSettings>
+        </Pad>
+        <Pad Id="G4VnDTtXpXUNlQ0uKKibNp" Bounds="299,246,109,19" ShowValueBox="true" isIOBox="true" Value="Connect to a bot">
+          <p:TypeAnnotation>
+            <Choice Kind="TypeFlag" Name="String" />
+          </p:TypeAnnotation>
+          <p:ValueBoxSettings>
+            <p:fontsize p:Type="Int32">9</p:fontsize>
+            <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+          </p:ValueBoxSettings>
+        </Pad>
+        <Pad Id="FthSr9Lyw26MCQGRnWUpQS" Bounds="299,338,214,19" ShowValueBox="true" isIOBox="true" Value="Create Inline and  Reply keyboards">
+          <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <Choice Kind="TypeFlag" Name="String" />
+          </p:TypeAnnotation>
+          <p:ValueBoxSettings>
+            <p:fontsize p:Type="Int32">9</p:fontsize>
+            <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+          </p:ValueBoxSettings>
+        </Pad>
+        <Pad Id="C1Yc5R46Qd0MfwUTU8eItI" Bounds="299,424,310,19" ShowValueBox="true" isIOBox="true" Value="React to queries emanating from Inline keyboards">
+          <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <Choice Kind="TypeFlag" Name="String" />
+          </p:TypeAnnotation>
+          <p:ValueBoxSettings>
+            <p:fontsize p:Type="Int32">9</p:fontsize>
+            <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+          </p:ValueBoxSettings>
+        </Pad>
       </Canvas>
       <!--
 
