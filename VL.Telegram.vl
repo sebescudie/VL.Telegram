@@ -702,6 +702,7 @@
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
                 <Choice Kind="OperationDefinition" Name="Operation" />
               </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="UIithpnghfrOI8tSYmLnMh">
                 <ControlPoint Id="EXiFPyIoOLhM2C40VhqzSf" Bounds="317,794" />
                 <Pin Id="H9BEQfMTClEMbcBM0XtInj" Name="Result" Kind="OutputPin" Bounds="424,824" />
