@@ -2598,7 +2598,11 @@
                     <Choice Kind="TypeFlag" Name="Boolean" />
                   </p:TypeAnnotation>
                 </Pin>
-                <Pin Id="IXx9kfjzja1OzFt9KPDw20" Name="Stop Receiving" Kind="InputPin" Bounds="793,203" />
+                <Pin Id="IXx9kfjzja1OzFt9KPDw20" Name="Stop Receiving" Kind="InputPin" Bounds="793,203" DefaultValue="False">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="Boolean" />
+                  </p:TypeAnnotation>
+                </Pin>
                 <Pin Id="IL6L2yKjE5cNiBAZ9QzBCz" Name="Bot" Kind="OutputPin" Bounds="22,1375" />
                 <Pin Id="CvqIpt27JEBLrVZyLSe5Pf" Name="Username" Kind="OutputPin" Bounds="108,1389" />
                 <Pin Id="UjUeeIyO1ulMtDq5trYYGQ" Name="Is Receiving" Kind="OutputPin" Bounds="808,1079" />
