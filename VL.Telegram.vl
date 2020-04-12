@@ -578,14 +578,14 @@
     ************************ Photo ************************
 
 -->
-            <Node Name="Photo" Bounds="542,268,116,80" Id="ESV3Q8XdkySNZml8YNPrUv">
+            <Node Name="Photo" Bounds="545,248,107,110" Id="ESV3Q8XdkySNZml8YNPrUv">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="GI9sjl1JJ98QZ2szIDLWxk">
-                <Node Bounds="559,297,47,26" AutoConnect="true" Id="A217hNkuDFPM5aUjwScaTr">
+                <Node Bounds="557,271,47,26" AutoConnect="true" Id="A217hNkuDFPM5aUjwScaTr">
                   <p:NodeReference LastCategoryFullName="Telegram.Bot.Types.Message" LastSymbolSource="Telegram.Bot.dll">
                     <Choice Kind="OperationNode" Name="Photo" />
                     <FullNameCategoryReference ID="Telegram.Bot.Types.Message" />
@@ -594,7 +594,20 @@
                   <Pin Id="VmP1tIaj8tpPnMRdQGkeAe" Name="Photo" Kind="OutputPin" />
                 </Node>
                 <Pin Id="Ho8wRtnGhksO3sBmY7aV9B" Name="Input" Kind="InputPin" />
-                <Pin Id="IcznauDwigIMZr4uuDtns2" Name="Photo" Kind="OutputPin" />
+                <Node Bounds="557,304,83,26" Id="JTp5afDalA3PkFLOFpDdd5">
+                  <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="FromSequence" />
+                    <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="TiW86EJ8NqxPeFvbmx9drH" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="Tz4aHw2gG57OSb09LEFRwr" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Link Id="TQCbPsfO8pqMO4AVG9G4Wc" Ids="VmP1tIaj8tpPnMRdQGkeAe,TiW86EJ8NqxPeFvbmx9drH" />
+                <ControlPoint Id="GPVledsh6FUPTUnVIVqmyX" Bounds="559,341" />
+                <Link Id="JaH5tzoXkfSMjaiL2rY0b8" Ids="Tz4aHw2gG57OSb09LEFRwr,GPVledsh6FUPTUnVIVqmyX" />
+                <Pin Id="VD2ruQWS7a8PFMfWa6jsJk" Name="Result" Kind="OutputPin" Bounds="561,367" />
+                <Link Id="QrtxY50FDsjN4L26jnnSbw" Ids="GPVledsh6FUPTUnVIVqmyX,VD2ruQWS7a8PFMfWa6jsJk" IsHidden="true" />
               </Patch>
             </Node>
             <!--
