@@ -30,7 +30,7 @@
             <Pin Id="Sgg3CVM5E5KLw9qRyIMptB" Name="Username" Kind="OutputPin" />
             <Pin Id="QyBUyh0Iv2UNTxEfLBIQqH" Name="Is Receiving" Kind="OutputPin" />
           </Node>
-          <Pad Id="NxOtz0IkOYgOedtPZkUdl7" Comment="Token" Bounds="109,176,246,15" ShowValueBox="true" isIOBox="true" Value="816114921:AAFLxjVYFCNLjbweujzqzoQbSb-KbuNmV2I">
+          <Pad Id="NxOtz0IkOYgOedtPZkUdl7" Comment="Token" Bounds="109,176,246,15" ShowValueBox="true" isIOBox="true" Value="1234567:4TT8bAc8GHUspu3ERYn-KGcvsvGB9u_n4ddy&quot;">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -519,6 +519,24 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="CoHHoy7NjdsOOjCdL9P9vW" Bounds="572,873,321,66" ShowValueBox="true" isIOBox="true" Value="Here you see two ways of reacting to a Callback query. Press CTRL+F1 to show the log window, and press &quot;Button 2&quot; on the inline keyboard.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="AmKzE4dvORZQC0y4ZK0zP7" Bounds="402,173,253,19" ShowValueBox="true" isIOBox="true" Value="(this is a fake token paste your own here)">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="OJyPDospQFYMDu7t0RCQdt" Bounds="54,93,634,46" ShowValueBox="true" isIOBox="true" Value="This patch roughly shows some scenarios available in this lib. We won't cover them in details. If you want to know more on a specific aspect, please refer to the Topics section in the help browser.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
