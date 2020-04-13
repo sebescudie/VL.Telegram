@@ -23,6 +23,7 @@
               <CategoryReference Kind="Category" Name="Bot" />
               <Choice Kind="ProcessAppFlag" Name="BotClient" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="GJtcYtWSYLJOFatppq46ON" Name="Token" Kind="InputPin" />
             <Pin Id="CiSC5TpLRk1N2EogHvug1g" Name="Start Receiving" Kind="InputPin" />
             <Pin Id="UvkXIKUQpG2OIPR1nQX8dp" Name="Stop Receiving" Kind="InputPin" />
@@ -82,7 +83,7 @@
           <Node Bounds="107,438,47,19" Id="JXYwvQQxbTGOsQLr1NpmMD">
             <p:NodeReference LastCategoryFullName="IO.Telegram.Message" LastSymbolSource="VL.Telegram.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="ChatID" />
+              <Choice Kind="OperationCallFlag" Name="ChatId" />
             </p:NodeReference>
             <Pin Id="DK77E23A7ZXP0FEmEzXFfu" Name="Input" Kind="StateInputPin" />
             <Pin Id="BMjPn8iPiaJOo2cPApXn8d" Name="Result" Kind="OutputPin" />

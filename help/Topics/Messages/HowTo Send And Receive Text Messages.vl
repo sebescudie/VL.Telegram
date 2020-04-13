@@ -45,6 +45,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SendTextMessage" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="IfjvADKX6JoPjQvTAwIeZJ" Name="Bot" Kind="InputPin" />
             <Pin Id="SdXilxW3tcFPHadjyYiCGm" Name="Chat Id" Kind="InputPin" />
             <Pin Id="NyyOGWhTpejPAAYR1zKmvL" Name="Text" Kind="InputPin" />
@@ -56,6 +57,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="OnMessage" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="J0XmCBthZPhOm8FpgbgAtV" Name="Input" Kind="InputPin" />
             <Pin Id="QXGNd5ZwQWALG8VG6zgnzW" Name="Result" Kind="OutputPin" />
           </Node>
@@ -72,7 +74,7 @@
           <Node Bounds="151,559,47,26" Id="I0kd13bwIVDPzSUV4zF1w2">
             <p:NodeReference LastCategoryFullName="IO.Telegram.Message" LastSymbolSource="VL.Telegram.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="ChatID" />
+              <Choice Kind="OperationCallFlag" Name="ChatId" />
             </p:NodeReference>
             <Pin Id="GvOli8aAM5jP0rdWvxdBSc" Name="Input" Kind="StateInputPin" />
             <Pin Id="KQOhnjYG3mCLx4CCbfRynK" Name="Result" Kind="OutputPin" />
@@ -213,6 +215,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="FilterByType" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="BU88KgUcQyRLcDvMXv3q7v" Name="Value" Kind="InputPin" />
             <Pin Id="BiV7YnEjIirNOubMhanp34" Name="Filter" Kind="InputPin" />
             <Pin Id="E216j8afKdrQZQhrdhKG24" Name="Result" Kind="OutputPin" />
@@ -235,11 +238,6 @@
         </Canvas>
         <Patch Id="JNXjG5I2mUsMlNHjWXhnby" Name="Create" />
         <Patch Id="MEvUUrudihmOfmNoQQWKVq" Name="Update" />
-        <!--
-
-    ************************  ************************
-
--->
         <ProcessDefinition Id="FT6FnUBucKNNmzr6jBekdI">
           <Fragment Id="TujSmJ7coi1ONr2OBjLSAD" Patch="JNXjG5I2mUsMlNHjWXhnby" Enabled="true" />
           <Fragment Id="U2EezglmZ1vNjlYGqDK1SS" Patch="MEvUUrudihmOfmNoQQWKVq" Enabled="true" />
