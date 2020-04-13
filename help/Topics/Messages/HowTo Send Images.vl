@@ -27,7 +27,7 @@
             <Pin Id="INWSkVBPsGvLEqqFnXuCeQ" Name="Username" Kind="OutputPin" />
             <Pin Id="BRYLgMXP3KLQDSQi4oxFMM" Name="Is Receiving" Kind="OutputPin" />
           </Node>
-          <Pad Id="QtT833IKOEDNx1x0k21o4n" Comment="Token" Bounds="77,182,137,15" ShowValueBox="true" isIOBox="true" Value="">
+          <Pad Id="QtT833IKOEDNx1x0k21o4n" Comment="Token" Bounds="77,182,137,15" ShowValueBox="true" isIOBox="true" Value="816114921:AAFLxjVYFCNLjbweujzqzoQbSb-KbuNmV2I">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -40,7 +40,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="E5l3G7kjUl7Nan0yB86guN" Comment="Username" Bounds="103,270,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="E5l3G7kjUl7Nan0yB86guN" Comment="Username" Bounds="103,270,73,10" ShowValueBox="true" isIOBox="true" />
           <Pad Id="IxgqPyuZ2DgOeZ3PfSlGDC" Bounds="269,220,149,38" ShowValueBox="true" isIOBox="true" Value="Paste your Token and bang Start Receiving">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
@@ -81,6 +81,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SendPhoto" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="C6V8Lc3W6OCPTRXY0Ojxnh" Name="Bot" Kind="InputPin" />
             <Pin Id="SWGblhzq7LuLKxkvt6udFT" Name="Chat Id" Kind="InputPin" />
             <Pin Id="TCePzM9ODhkQXX798J7vML" Name="Path" Kind="InputPin" />
@@ -110,6 +111,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SendImage" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="IczfnK3szivLSqiXnt4iVS" Name="Bot" Kind="InputPin" />
             <Pin Id="DPHQcW0680SMWFYCpmWzrp" Name="Chat Id" Kind="InputPin" />
             <Pin Id="VbSQwgbWE2kNldtutZB4VY" Name="Image" Kind="InputPin" />
@@ -143,18 +145,6 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="UI4Sc2bUpy8N9eKMRAz9Tq" Bounds="563,309,168,42" ShowValueBox="true" isIOBox="true" Value="TODO : WORKOUT IMAGE RECEPTION">
-            <p:TypeAnnotation>
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Overlay Id="RHVyFuMB5l3Njd4rpj1jPP" Name="" Bounds="526,266,259,107">
-            <p:ColorIndex p:Type="Int32">8</p:ColorIndex>
-          </Overlay>
         </Canvas>
         <Patch Id="DYi4djn58YBN6Om3kpNdTw" Name="Create" />
         <Patch Id="JBp5CIo5KefM9WM2A0hf2Z" Name="Update" />
