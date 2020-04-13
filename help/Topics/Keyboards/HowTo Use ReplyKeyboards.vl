@@ -104,7 +104,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ReplyKeyboard" />
             </p:NodeReference>
-            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">Low</p:HelpFocus>
             <Pin Id="ASVRSRKL0qoOcIoQSWi1j8" Name="Input" Kind="InputPin" />
             <Pin Id="R0mmLMZjY6qPqxNuMyla9O" Name="Resize Keyboard" Kind="InputPin" />
             <Pin Id="Mh01p6NqCeBNEEF1lgYNrC" Name="One Time Keyboard" Kind="InputPin" />
@@ -256,11 +256,6 @@
         </Canvas>
         <Patch Id="F6nrrvVPTPhNd3UZAjrYpJ" Name="Create" />
         <Patch Id="SN9MfaPFgvZQaFYJV4Ft3V" Name="Update" />
-        <!--
-
-    ************************  ************************
-
--->
         <ProcessDefinition Id="SGsSYv6hkxjPSDyFdo42tF">
           <Fragment Id="HPfuLlNx5xgPKXFevVjzPn" Patch="F6nrrvVPTPhNd3UZAjrYpJ" Enabled="true" />
           <Fragment Id="E4YfcDDTISMMoMUcsCRoqQ" Patch="SN9MfaPFgvZQaFYJV4Ft3V" Enabled="true" />
