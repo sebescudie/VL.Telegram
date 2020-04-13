@@ -104,6 +104,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="InlineKeyboard" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="EMOLBkrJk6CMPsvbk62TDN" Name="Label" Kind="InputPin" />
             <Pin Id="OlWPC4KuDxwPqWBfPl10Hu" Name="Callback Data" Kind="InputPin" />
             <Pin Id="JtLgEfYWXYkLuxfzkF8sTK" Name="URL" Kind="InputPin" />
@@ -246,6 +247,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="OnCallbackQuery" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="N1ETfiTkmCpOiH2fxIlfyf" Name="Input" Kind="InputPin" />
             <Pin Id="MjcqdwhrXcmNxRXVynHRR5" Name="Result" Kind="OutputPin" />
           </Node>
@@ -278,6 +280,7 @@
               <CategoryReference Kind="Category" Name="CallbackQuery" />
               <Choice Kind="ProcessAppFlag" Name="FilterByDataQuery" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="T6GkkoOujBNOHcTaiTggQp" Name="Value" Kind="InputPin" />
             <Pin Id="TEwxdnqi2AFL0LnEZqfaAy" Name="Data" Kind="InputPin" />
             <Pin Id="MYKSZtokMpsQB6IWzSHYh8" Name="Result" Kind="OutputPin" />
@@ -348,6 +351,7 @@
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="AnswerCallbackQuery" />
                 </p:NodeReference>
+                <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
                 <Pin Id="Ai8QCdfC5foOhLR39uZwb0" Name="Bot" Kind="InputPin" />
                 <Pin Id="VgFVZi2jvLeM2oPxYOWjFX" Name="Callback Query Id" Kind="InputPin" />
                 <Pin Id="IaUR7v6jg1QK9k1TWiqx0P" Name="Text" Kind="InputPin" DefaultValue="Query completed">
@@ -539,11 +543,6 @@
         </Canvas>
         <Patch Id="BuIKfcdLaI1PWUu79uoYrP" Name="Create" />
         <Patch Id="PuT97xvC73QLiafTkT7yc3" Name="Update" />
-        <!--
-
-    ************************  ************************
-
--->
         <ProcessDefinition Id="EMZAjU7oQ7OORyq3bfT4Ys">
           <Fragment Id="ChIfKhem5cLMqK2H4Ax4Kd" Patch="BuIKfcdLaI1PWUu79uoYrP" Enabled="true" />
           <Fragment Id="QteD11YArpHLMnMRLEixCu" Patch="PuT97xvC73QLiafTkT7yc3" Enabled="true" />
