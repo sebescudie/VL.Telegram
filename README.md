@@ -2,10 +2,6 @@
 
 A VL wrapper of the [Telegram.Bot](https://github.com/TelegramBots/Telegram.Bot) lib.
 
-## Installing
-
-> `nuget install VL.Telegram`
-
 ## What's inside
 
 This one is not as complete as motzi's [beta plugin](https://github.com/mhusinsky/vvvv-Telegram). It was made with installation monitoring scenarios in mind. Here you can :
