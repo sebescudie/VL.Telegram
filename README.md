@@ -1,3 +1,5 @@
+**Important: Remove the netcore folder from the TelegramBot nuget**
+
 # VL.Telegram
 
 A VL wrapper of the [Telegram.Bot](https://github.com/TelegramBots/Telegram.Bot) lib.
