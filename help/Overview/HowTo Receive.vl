@@ -25,7 +25,7 @@
             <Pin Id="NxnogoVemRvNw1JA30txxy" Name="Me" Kind="OutputPin" />
             <Pin Id="B3nBYAZ3EDtLaXUrKAsBhS" Name="Bot" Kind="OutputPin" />
           </Node>
-          <Pad Id="FxWOxwq2DxzLCf96bMRBHz" Comment="Token" Bounds="708,242,282,15" ShowValueBox="true" isIOBox="true" Value="764591732:AAF_-cYIpCZvpIy2zSCqJA26Iz-8GCBuWnI">
+          <Pad Id="FxWOxwq2DxzLCf96bMRBHz" Comment="Token" Bounds="708,242,282,15" ShowValueBox="true" isIOBox="true" Value="">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -49,7 +49,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="810,420,80,19" Id="ErDGLgq1ng3NvUBJBMtrUj">
+          <Node Bounds="826,421,80,19" Id="ErDGLgq1ng3NvUBJBMtrUj">
             <p:NodeReference LastCategoryFullName="IO.Telegram.Utilities.Bot" LastSymbolSource="VL.Telegram.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="StartReceiving" />
@@ -63,7 +63,7 @@
             <Pin Id="RVsaAGBEU0wNsjTfJF9zhJ" Name="ID" Kind="OutputPin" />
             <Pin Id="INEvdAF081WNe6UU4iM3yU" Name="Messages" Kind="OutputPin" />
           </Node>
-          <Pad Id="BOWM5bYsP6HOHTuKTlSSWA" Comment="Start" Bounds="866,285,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="BOWM5bYsP6HOHTuKTlSSWA" Comment="Start" Bounds="879,274,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -72,7 +72,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="TzRxFMrAm4vMJefc99nz9Z" Comment="Stop" Bounds="813,154,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="TzRxFMrAm4vMJefc99nz9Z" Comment="Stop" Bounds="827,162,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -125,7 +125,7 @@
               <Item></Item>
             </p:Value>
           </Pad>
-          <Pad Id="Bq6v5rRQD2yOUNnR9LFFmy" Comment="ClearAll" Bounds="890,357,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="Bq6v5rRQD2yOUNnR9LFFmy" Comment="ClearAll" Bounds="903,352,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -154,11 +154,6 @@
             <p:Value>
               <Item></Item>
             </p:Value>
-          </Pad>
-          <Pad Id="FxEM47hcrgLMmPbudYRLP7" Comment="" Bounds="914,660,125,15" ShowValueBox="true" isIOBox="true" Value="/hello this is the">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
           </Pad>
           <Node Bounds="818,827,62,86" Id="Lmlb4Sm568GQZuBVI0ppXV">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
