@@ -22,6 +22,7 @@
             <Pin Id="HNETRdSgivdPUohLLgOvmI" Name="Token" Kind="InputPin" />
             <Pin Id="P3npEjLuKbzLugKQwuRsi3" Name="Cancel" Kind="InputPin" DefaultValue="False" />
             <Pin Id="H0IXNA0Y0ZvNYlPfrPGQeK" Name="Force" Kind="InputPin" DefaultValue="False" />
+            <Pin Id="GHuEqovF36RLEDQbvs5Bzq" Name="Bot Id" Kind="OutputPin" />
             <Pin Id="NxnogoVemRvNw1JA30txxy" Name="Me" Kind="OutputPin" />
             <Pin Id="B3nBYAZ3EDtLaXUrKAsBhS" Name="Bot" Kind="OutputPin" />
           </Node>
@@ -344,13 +345,13 @@
               <Choice Kind="ProcessAppFlag" Name="SendTextMessage" />
             </p:NodeReference>
             <Pin Id="EO3LSpPFJKTP4A24fwOZUb" Name="Bot" Kind="InputPin" />
-            <Pin Id="L4IdKsLOWVTMmDMJ0Z1OQf" Name="Chat Id" Kind="InputPin" />
             <Pin Id="U4iNzYZAtoNMVDE2xKRxu2" Name="Text" Kind="InputPin" DefaultValue="" />
             <Pin Id="TrHK9hpQhniQEfden6k8Zx" Name="Send" Kind="InputPin" />
             <Pin Id="GfWg8mOaud5QFi47cXLRQF" Name="Entities" Kind="InputPin" />
             <Pin Id="D7PVcI29on6O3fZ2qBcRRx" Name="Canceled" Kind="InputPin" />
             <Pin Id="UPxCN8f9JecM6CbUF8JkdA" Name="Allow Sending Without Reply" Kind="InputPin" DefaultValue="True" />
             <Pin Id="SJLYkkfb65BNIT6kXmEG3a" Name="Reply To Message Id" Kind="InputPin" />
+            <Pin Id="L4IdKsLOWVTMmDMJ0Z1OQf" Name="Chat Id" Kind="InputPin" />
             <Pin Id="CKUBYICQf8jM2e8Xpkyc6W" Name="Output" Kind="OutputPin" />
           </Node>
           <Pad Id="IWykULwJnuvQQxxjXe5VjW" Comment="Text" Bounds="939,1026,35,15" ShowValueBox="true" isIOBox="true" Value="ALERT">
