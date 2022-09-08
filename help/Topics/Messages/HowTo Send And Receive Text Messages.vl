@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="LLsMsgvXIUXPw16e9A7avu" LanguageVersion="2020.1.0" Version="0.128">
-  <NugetDependency Id="QmSB1xvQiTTQZiBg496gfN" Location="VL.CoreLib" Version="2020.1.0" />
+<Document xmlns:p="property" Id="LLsMsgvXIUXPw16e9A7avu" LanguageVersion="2021.4.10.1018" Version="0.128">
+  <NugetDependency Id="QmSB1xvQiTTQZiBg496gfN" Location="VL.CoreLib" Version="2021.4.10-1018-g933c4b477f" />
   <Patch Id="I9EqOAWPjeJPuvEK2pDGOK">
     <Canvas Id="M21YBWgXvb9PelhLz2iCJT" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -15,30 +15,22 @@
       </p:NodeReference>
       <Patch Id="K3FNVYhFotWLKwcqucHmh3">
         <Canvas Id="Qs48Fmnd2m6NrKBNaj15l2" CanvasType="Group">
-          <Node Bounds="65,202,57,19" Id="RQODo3J9h3jMCCFpLCQg7R">
+          <Node Bounds="4,199,65,19" Id="RQODo3J9h3jMCCFpLCQg7R">
             <p:NodeReference LastCategoryFullName="IO.Telegram.Utilities.Bot" LastSymbolSource="VL.Telegram.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="BotClient" />
             </p:NodeReference>
             <Pin Id="DNrGZvb6jfBN2sO7SV3et2" Name="Token" Kind="InputPin" />
-            <Pin Id="ECaEhzbf5wlLPoDtxSY2Fm" Name="Start Receiving" Kind="InputPin" />
-            <Pin Id="DDpbfylP4KdLLFQO9HaKYc" Name="Stop Receiving" Kind="InputPin" />
+            <Pin Id="CFASUiCOL8lNplWLgd6rdG" Name="Cancel" Kind="InputPin" />
+            <Pin Id="GQjltE6LMjaOUwaxJTI4O5" Name="Force" Kind="InputPin" />
+            <Pin Id="M6S6qtl1Q3tMTQuEMIhrar" Name="Bot Id" Kind="OutputPin" />
+            <Pin Id="HSk9j61kjGeNs5Ba2SdWbL" Name="Me" Kind="OutputPin" />
             <Pin Id="G8j5kE5nIkYLk0zKYgSa2V" Name="Bot" Kind="OutputPin" />
-            <Pin Id="OUzFLZEZ540MxuXl0x3uVB" Name="Username" Kind="OutputPin" />
-            <Pin Id="H0CUQZZChaTNuARWPTFCkr" Name="Is Receiving" Kind="OutputPin" />
           </Node>
-          <Pad Id="LsWvvBNKVBVMjxB6lgxOPR" Comment="Token" Bounds="67,151,137,15" ShowValueBox="true" isIOBox="true" Value="">
+          <Pad Id="LsWvvBNKVBVMjxB6lgxOPR" Comment="Token" Bounds="6,148,137,15" ShowValueBox="true" isIOBox="true" Value="">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="DLr4tDtt4IpOjlTX7PHBgb" Comment="Start Receiving" Bounds="93,178,35,15" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-              <Choice Kind="TypeFlag" Name="Boolean" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
-            </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="66,662,261,19" Id="Ff9sAsFCDaqNzOe6YaUTAj">
             <p:NodeReference LastCategoryFullName="IO.Telegram.Utilities.Message" LastSymbolSource="VL.Telegram.vl">
@@ -47,11 +39,15 @@
             </p:NodeReference>
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="IfjvADKX6JoPjQvTAwIeZJ" Name="Bot" Kind="InputPin" />
-            <Pin Id="SdXilxW3tcFPHadjyYiCGm" Name="Chat Id" Kind="InputPin" />
             <Pin Id="NyyOGWhTpejPAAYR1zKmvL" Name="Text" Kind="InputPin" />
             <Pin Id="LNJdopHq5DpPl23oUYwxKO" Name="Send" Kind="InputPin" />
+            <Pin Id="OejO50CYPxNNqZkOeVpsrX" Name="Entities" Kind="InputPin" />
+            <Pin Id="J6egHI6RJiKOCk44iTnVPB" Name="Canceled" Kind="InputPin" />
+            <Pin Id="DZcogmBukkeMrgyFLWE10q" Name="Allow Sending Without Reply" Kind="InputPin" />
+            <Pin Id="BndJKFJ2cO3OwoPARwtRUm" Name="Reply To Message Id" Kind="InputPin" />
+            <Pin Id="SdXilxW3tcFPHadjyYiCGm" Name="Chat Id" Kind="InputPin" />
+            <Pin Id="E9JEMy8ltJMN1nwsr0nsFT" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="Hj1wkDgdXdmPTgdxASOhnz" Comment="Username" Bounds="93,239,35,15" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="151,304,68,19" Id="J6fNhuIFWv1LQM6eB14NZQ">
             <p:NodeReference LastCategoryFullName="IO.Telegram.Utilities.Message" LastSymbolSource="VL.Telegram.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -243,9 +239,7 @@
           <Fragment Id="U2EezglmZ1vNjlYGqDK1SS" Patch="MEvUUrudihmOfmNoQQWKVq" Enabled="true" />
         </ProcessDefinition>
         <Link Id="P98OJoLsKS5Ppu2qnkVpwy" Ids="LsWvvBNKVBVMjxB6lgxOPR,DNrGZvb6jfBN2sO7SV3et2" />
-        <Link Id="L20A0bDZgwaOImqhuTs7DN" Ids="DLr4tDtt4IpOjlTX7PHBgb,ECaEhzbf5wlLPoDtxSY2Fm" />
         <Link Id="T0tzxsAapqGPJsEUd0N7qR" Ids="G8j5kE5nIkYLk0zKYgSa2V,IfjvADKX6JoPjQvTAwIeZJ" />
-        <Link Id="JutEzCBqeKfOSqDHLAQHxC" Ids="OUzFLZEZ540MxuXl0x3uVB,Hj1wkDgdXdmPTgdxASOhnz" />
         <Link Id="Ia50YPIxGtuMewrmy9MvE6" Ids="G8j5kE5nIkYLk0zKYgSa2V,J0XmCBthZPhOm8FpgbgAtV" />
         <Link Id="O3F6ddJ7pBNQTafWSHjrgy" Ids="QXGNd5ZwQWALG8VG6zgnzW,RDSZqhOdcxaPMvzMlcLP5a" />
         <Link Id="HkJFH9i0talLYSvkaR3r9e" Ids="FpNADX1CXgSOhDW66LE641,GvOli8aAM5jP0rdWvxdBSc" />
@@ -260,6 +254,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="DyT7RVCHaHlMKBZYDZ2fBN" Location="VL.Skia" Version="2020.1.0" />
+  <NugetDependency Id="DyT7RVCHaHlMKBZYDZ2fBN" Location="VL.Skia" Version="2021.4.10-1018-g933c4b477f" />
   <DocumentDependency Id="B8yNEkUMGqiOinhcnUjuoS" Location="../../../VL.Telegram.vl" />
 </Document>
