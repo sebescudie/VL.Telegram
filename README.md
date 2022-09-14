@@ -1,4 +1,7 @@
 **Important: Remove the netcore folder from the TelegramBot nuget**
+**Many of the initial examples are broken**
+
+Known issue: TelegramBot ReceiveAsync does not stop when Cancellation Token is triggered
 
 # VL.Telegram
 
