@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="QDx2T2CV3IAPTzYf5M4WtC" LanguageVersion="2021.4.8.940" Version="0.128">
+<Document xmlns:p="property" Id="QDx2T2CV3IAPTzYf5M4WtC" LanguageVersion="2022.5.0-0401-8c8342a1de" Version="0.128">
   <Patch Id="BbMQ63TfPdsPE7ZBcEfRC4">
     <Canvas Id="M9jjLmqWELXNDXOF4sCGyE" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -31,7 +31,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="679,144,62,26" Id="RbsXU9R8nniLCHHNAswtD4">
+          <Node Bounds="681,151,62,26" Id="RbsXU9R8nniLCHHNAswtD4">
             <p:NodeReference LastCategoryFullName="IO.Telegram.User" LastSymbolSource="VL.Telegram.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="User" />
@@ -41,7 +41,7 @@
             <Pin Id="Q7YgBbKLzqhM8NC8QxQp3v" Name="First Name" Kind="OutputPin" />
           </Node>
           <Pad Id="CkiQrg7apEHPAeEF2uNHoP" Comment="First Name" Bounds="683,203,115,30" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="1003,296,80,19" Id="ErDGLgq1ng3NvUBJBMtrUj">
+          <Node Bounds="860,383,80,19" Id="ErDGLgq1ng3NvUBJBMtrUj">
             <p:NodeReference LastCategoryFullName="IO.Telegram.Utilities.Bot" LastSymbolSource="VL.Telegram.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="StartReceiving" />
@@ -54,7 +54,7 @@
             <Pin Id="THlYZLPVpKXNLRT1mcUV4M" Name="Text" Kind="OutputPin" />
             <Pin Id="RVsaAGBEU0wNsjTfJF9zhJ" Name="ID" Kind="OutputPin" />
           </Node>
-          <Pad Id="BOWM5bYsP6HOHTuKTlSSWA" Comment="Start" Bounds="1056,192,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="BOWM5bYsP6HOHTuKTlSSWA" Comment="Start" Bounds="913,279,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -63,7 +63,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="TzRxFMrAm4vMJefc99nz9Z" Comment="Stop" Bounds="1138,243,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="TzRxFMrAm4vMJefc99nz9Z" Comment="Stop" Bounds="995,330,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -72,9 +72,17 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="JdVmJewwcsxOIhjvg20upU" Comment="ChatId" Bounds="1080,338,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="SvT9XT3eU8TL3vr9lSwqrf" Comment="Text" Bounds="1042,398,148,15" ShowValueBox="true" isIOBox="true" />
-          <ControlPoint Id="JnDGGELKk7GP7Xd0YC8EMf" Bounds="1026,179" />
+          <Pad Id="JdVmJewwcsxOIhjvg20upU" Comment="ChatId" Bounds="937,425,136,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="SvT9XT3eU8TL3vr9lSwqrf" Comment="Text" Bounds="899,485,148,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="I2NZz9Xj2rNLkNd51wLLnR" Comment="Cancel" Bounds="809,32,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="E3UUl09z9BWNBxDKI49URh" Name="Create" />
         <Patch Id="CiwGKPzLgmaNtfYkziHs08" Name="Update" />
@@ -88,11 +96,12 @@
         <Link Id="Q8qcFWA6kphQZrsLx1ga5O" Ids="TzRxFMrAm4vMJefc99nz9Z,OhazsainZ0qMjLVBKJ38gU" />
         <Link Id="Kcr8ZNjf5GfLyhtnsUzv4r" Ids="RVsaAGBEU0wNsjTfJF9zhJ,JdVmJewwcsxOIhjvg20upU" />
         <Link Id="OaHmf8OVHbtPRHTZ7yhjKw" Ids="FxWOxwq2DxzLCf96bMRBHz,HNETRdSgivdPUohLLgOvmI" />
-        <Link Id="KearSPCOEq1Oruj8wk7ueE" Ids="B3nBYAZ3EDtLaXUrKAsBhS,JnDGGELKk7GP7Xd0YC8EMf,II4v1cQZ1ITQVvHzWgUayW" />
+        <Link Id="KearSPCOEq1Oruj8wk7ueE" Ids="B3nBYAZ3EDtLaXUrKAsBhS,II4v1cQZ1ITQVvHzWgUayW" />
         <Link Id="B9ESDMLTgOLPd0h17Soyab" Ids="THlYZLPVpKXNLRT1mcUV4M,SvT9XT3eU8TL3vr9lSwqrf" />
+        <Link Id="M2rKkJCiiYHMbUKzp4nDmX" Ids="I2NZz9Xj2rNLkNd51wLLnR,P3npEjLuKbzLugKQwuRsi3" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Or7c3ZbNmPhNNk71EpEOZh" Location="VL.CoreLib" Version="2021.4.8-0940-g49c97a1c2c" />
+  <NugetDependency Id="Or7c3ZbNmPhNNk71EpEOZh" Location="VL.CoreLib" Version="2022.5.0-0401-g8c8342a1de" />
   <NugetDependency Id="QndksEqv0TyOeBw83Q5nKw" Location="VL.Telegram" Version="0.0.0.0" />
 </Document>
